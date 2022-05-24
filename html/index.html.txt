@@ -1,0 +1,84 @@
+<!-- html5 -->
+<!DOCTYPE html>
+
+<!-- dil -->
+<html lang="en">
+
+<!-- search engine -->
+
+<head>
+    <!-- türkçe karakter -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Hamit Mızrak Türkcell" />
+    <meta name="description" content="Html5 property" />
+
+    <!-- Browser üzerinde görülen kısımdır -->
+    <title>Html5</title>
+</head>
+
+<body>
+    <!-- ends code -->
+
+
+
+    <ol start="1" type="A">
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+    </ol>
+
+    <hr>
+    <!-- düzenli olmayan liste -->
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+        <li>item 5</li>
+    </ul>
+
+    <hr>
+    <!-- HTML FORMATTER -->
+    <b>bold</b> <br />
+    <i>italic</i> <br />
+    <big>big</big> <br />
+    <small>small</small> <br />
+    <strong>strong</strong> <br />
+    <code>Lorem ipsum dolor sit amet.</code> <br />
+    <em>vurgulama</em> <br />
+    log<sub>2</sub>n <br />
+    10 <sup>5</sup> <br />
+    <mark>Lorem ipsum dolor sit amet.</mark> <br />
+    <del> 15.000</del>TL 14.999 TL <br />
+    <p> <ins>Lorem ipsum dolor sit <b>ame <i>t</i> </b> .</ins> </p>
+
+
+    <br>
+    <hr>
+    <!-- span div -->
+    <div>Alt satıra geçer</div>
+    <hr>
+    <span>o satırda devam eder</span>
+    <hr>
+    <p>Lorem ipsum dolor sit. </p>
+
+    <hr>
+    <br />
+    <!-- start code -->
+    <h1>heading 1</h1>
+    <h2>heading 2</h2>
+    <h3>heading 3</h3>
+    <h4>heading 4</h4>
+    <h5>heading 5</h5>
+    <h6>heading 6</h6>
+
+
+    <!-- ends code -->
+</body>
+
+</html>
