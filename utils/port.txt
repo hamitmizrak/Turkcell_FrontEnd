@@ -1,0 +1,2 @@
+localhost:5500 ==> live server 
+localhost:3000 ==> React
