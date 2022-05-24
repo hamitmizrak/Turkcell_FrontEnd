@@ -1,0 +1,15 @@
+KURULUMLAR
+
+git                 ==> https://git-scm.com/download/win
+visual studio code  ==> https://code.visualstudio.com/download
+node js             ==> https://nodejs.org/en/
+postgresql          ==> https://www.enterprisedb.com/downloads/postgres-postgresql-downloads
+Docker              ==> https://docs.docker.com/desktop/windows/install/
+
+Browser             ==> Google Chrome
+Oracle Vm           ==> https://www.virtualbox.org/wiki/Downloads
+Editor              ==> Notepad++
+
+JDK                 ==> https://www.oracle.com/java/technologies/downloads/#jdk18-windows
+Eclipse             ==> https://www.eclipse.org/downloads/
+OracleVM            ==> https://www.virtualbox.org/wiki/Downloads
