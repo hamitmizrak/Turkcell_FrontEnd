@@ -2,3 +2,4 @@ Online editor Codepen  ==> https://codepen.io/pen/
 Online editor JsFiddle ==> https://jsfiddle.net/
 Online visual s code   ==> https://vscode.dev/
 Emmet                  ==> https://docs.emmet.io/cheat-sheet/
+https://www.w3schools.com/html/
