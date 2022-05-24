@@ -1,0 +1,6 @@
+node -v 
+npm -v 
+
+git --version
+java -version
+javac -version
