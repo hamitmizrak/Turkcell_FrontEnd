@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- türkçe karakter -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Hamit Mızrak Türkcell" />
+    <meta name="description" content="Html5 property" />
+
+    <title>Html5</title>
+    <link rel="shortcut icon" href="../picture/resim1.jpg" type="image/x-icon">
+</head>
+
+<body>
+    <!-- start code -->
+    <form action="form.html" method="get" autocomplete="on">
+        <div>
+            <label for="adi">Adınız:</label>
+            <input type="text" id="adi" name="adi" placeholder="adınızı giriniz" required autofocus />
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="email giriniz" required/>
+        </div>
+        <div>
+            <label for="password44">password:</label>
+            <input type="password" id="password44" name="password44" placeholder="password giriniz" required/>
+        </div>
+
+        <div>
+            <input type="radio" id="bayan" name="gender" checked  />
+            <label for="bayan">Bayan</label>
+
+            <input type="radio" id="erkek" name="gender"  />
+            <label for="erkek">Erkek</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="html" name="html" checked  />
+            <label for="html">Html</label> <br/>
+
+            <input type="checkbox" id="css" name="css"   />
+            <label for="css">css</label> <br/>
+
+            <input type="checkbox" id="js" name="js"   />
+            <label for="js">js</label> <br/>
+
+            <input type="checkbox" id="java" name="java"   />
+            <label for="java">java</label> <br/>
+        </div>
+
+        <br><br>
+        <div>
+            <select name="backend_data" id="data" >
+                <option value="0" >Seçiniz</option>
+                <option value="backend_javase" >Javase</option>
+                <option value="backend_javaee" >Javaee</option>
+                <option value="backend_javame" >Javame</option>
+            </select>
+        </div>
+        
+
+        <br><br>
+        <div>
+            <input type="reset" value="TEMİZLE">
+            <input type="submit" value="VERİ GÖNDER">
+        </div>
+
+    </form>
+    <!-- ends code -->
+</body>
+
+</html>
