@@ -68,3 +68,27 @@ i{
     color:blue;
     font-size: 85px;
 }
+
+#div_a a{
+    color:red;
+    width:25%;
+    display:inline-block;
+    display: none;
+}
+
+.clear:before{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#img_id{
+    float:left;
+    margin-right: 15px;
+}
+
+#float_paragraf{
+    font-size: 20px;
+    text-align: justify;
+}
+
