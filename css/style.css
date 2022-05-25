@@ -146,15 +146,71 @@ header{
     background-size: cover;
 }
 
-.box{
-    width:24%;
-    height:150px;
-    background:red;
-    display:inline-block;
+
+
+/* min-width: en az 100 ve üzeri */
+/* x>=100*/
+@media screen and (min-width: 100px){
+    .box{
+        width:100%;
+        height:150px;
+        background:red;
+        display:inline-block;
+    }
+    
+    .box:hover{
+        box-shadow: 1px 1px 3px 1px black;
+        transition: 2s all;
+        transform: rotate(360deg);
+    }
 }
 
-.box:hover{
-    box-shadow: 1px 1px 3px 1px black;
-    transition: 2s all;
-    transform: rotate(360deg);
+/* min-width: en az 100 ve üzeri */
+/* 600<=X<=899 */ 
+@media screen and (min-width: 600px){
+    .box{
+        width:49%;
+        height:150px;
+        background:red;
+        display:inline-block;
+    }
+    
+    .box:hover{
+        box-shadow: 1px 1px 3px 1px black;
+        transition: 2s all;
+      
+    }
+}
+
+/* min-width: en az 100 ve üzeri */
+/* 900<=X<=1199 */ 
+@media screen and (min-width: 900px){
+    .box{
+        width:32%;
+        height:150px;
+        background:red;
+        display:inline-block;
+    }
+    
+    .box:hover{
+        box-shadow: 1px 1px 3px 1px black;
+        transition: 2s all;
+      
+    }
+}
+
+/* min-width: en az 100 ve üzeri */
+/* x>=1200 */ 
+@media screen and (min-width: 1200px){
+    .box{
+        width:24%;
+        height:150px;
+        background:red;
+        display:inline-block;
+    }
+    
+    .box:hover{
+        box-shadow: 1px 1px 3px 1px black;
+        transition: 2s all;
+    }
 }
