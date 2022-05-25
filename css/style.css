@@ -97,10 +97,18 @@ i{
     clear: both;
     display: block;
 }
+img{
+    max-width: 100%;
+    height: auto;
+}
 
 #img_id{
     float:left;
     margin-right: 15px;
+}
+
+#img_id:hover{
+    transform:rotate(180deg);
 }
 
 #float_paragraf{
@@ -112,6 +120,8 @@ i{
 ul{
 list-style-type: none;
 font-size:18px;
+margin-top:15px;
+margin-left:10%;
 
 }
 ul li{
@@ -123,6 +133,28 @@ ul li{
 }
 
 ul li:hover{
-    box-shadow:1px 1px 5px 1px rgba(0,0,0,.8);
+    box-shadow:1px 1px 5px 3px rgba(216, 48, 48, 0.8);
     cursor:pointer;
+    transition: 2s all;
+}
+
+
+header{
+    background-image: url("../picture/resim1.jpg");
+    height:75vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.box{
+    width:24%;
+    height:150px;
+    background:red;
+    display:inline-block;
+}
+
+.box:hover{
+    box-shadow: 1px 1px 3px 1px black;
+    transition: 2s all;
+    transform: rotate(360deg);
 }
