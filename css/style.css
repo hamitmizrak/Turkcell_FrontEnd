@@ -45,8 +45,23 @@ p{
     font-size: 25px;
     font-weight: bold;
     font-style: italic;
-    font-family: 'Arial Narrow Bold', sans-serif;
-    
+    font-family: 'Arial Narrow Bold', sans-serif; 
+    text-align: justify;
+
+    text-decoration: underline;
+    text-decoration: line-through;
+    text-decoration: none;
+    text-transform: capitalize;
+
+    text-indent: 44px;
+
+    word-spacing: 2;
+    letter-spacing:1px;
+    line-height:2;
+    column-count: 3;
+    column-rule: 10px solid red;
+    margin:0 25px;
+    margin:0px 25px;
 }
 
 i{
