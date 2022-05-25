@@ -1,4 +1,15 @@
 /* external css */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    /*
+    width:200px; border:10px padding:20px;
+    200+10*2+20*2=260px
+    */
+}
+
 p{
     color:orange;
 }
@@ -70,10 +81,15 @@ i{
 }
 
 #div_a a{
-    color:red;
-    width:25%;
+    color:yellow;
+    background:blue;
+    /* width:25%; */
     display:inline-block;
-    display: none;
+    /* display: none; */
+    text-decoration: none;
+    border:1px solid red; 
+    padding:2px 4px;
+    border-radius: 10%;
 }
 
 .clear:before{
@@ -92,3 +108,21 @@ i{
     text-align: justify;
 }
 
+
+ul{
+list-style-type: none;
+font-size:18px;
+
+}
+ul li{
+    display:inline;
+    text-transform: uppercase;
+    color:white;
+    background:black;
+    padding:4px 3px;
+}
+
+ul li:hover{
+    box-shadow:1px 1px 5px 1px rgba(0,0,0,.8);
+    cursor:pointer;
+}
