@@ -1,1 +1,1 @@
-Link: https://www.free-css.com/free-css-templates
+One Pages Link: https://www.free-css.com/template-categories/one-page
