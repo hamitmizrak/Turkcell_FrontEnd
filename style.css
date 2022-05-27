@@ -1,3 +1,24 @@
-p{
-    color:Red;
+/*
+project name: My project one pages
+project author:Hamit Mızrak
+project year: 2022
+project version: v.1
+*/
+/* config file */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Crimson Text', serif;
+    background:#000 ;
+    color:rgb(235, 218, 218) ;
+    position: relative;
+}
+
+html{
+    font-size:15px;
 }
