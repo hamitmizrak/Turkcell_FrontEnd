@@ -22,3 +22,15 @@ body{
 html{
     font-size:15px;
 }
+
+/* header */
+header{
+    background-image: url('picture/header.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+    padding-top:12rem;
+    height:40rem;
+    z-index: -1;
+    opacity: .8;
+
+}
