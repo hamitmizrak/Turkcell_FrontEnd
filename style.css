@@ -56,12 +56,15 @@ p{
     overflow: hidden;
 }
 
+/* ############################################################################################## */
+
 /* nav */
 #logo_id{
     width: 5rem;
     border-radius: 50%;
 }
 
+/* ############################################################################################## */
 /* header */
 header{
     background-image: url('picture/header.jpg');
@@ -73,6 +76,7 @@ header{
 background-color: black!important;
 }
 
+/* ############################################################################################## */
 
 /* main */
 #main_card_header_bottom>img {
@@ -83,14 +87,24 @@ background-color: black!important;
 p {
     color: black;
 }
+
+#about-2{
+   margin-top:10%;
+   background-color: #eaf0fc;
+   height: 32rem;
+   padding-top:5rem;
+}
+
+
+/* ############################################################################################## */
+
 /* footer */
 footer{
     min-height: 20rem;
     width:auto;
     background-color:#212529;
-   
 }
 
-footer > h6,p,div{
+footer > h6,p{
     color:#f2f1ea;
 }

@@ -34,7 +34,6 @@
 
     <!-- External JS -->
     <script src="template.js"></script>
-
 </head>
 
 <body data-target=".navbar" data-offset="44" data-spy="scroll">
@@ -57,16 +56,9 @@
             <!-- Collapsible wrapper -->
             <div class="collapse navbar-collapse" id="navbar_id">
                 <!-- Left links -->
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav me-auto ms-5 mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Dashboard</a>
-                    </li>
-
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Anasayfa <span class="sr-only"></span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#special_aboutme">Hakkımızda</a>
+                        <a class="nav-link me-2" href="#special_aboutme"> <i class="fa-solid fa-desktop"></i></a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
@@ -88,7 +80,7 @@
 
                 <div class="d-flex align-items-center">
                     <button data-bs-toggle="modal" data-bs-target="#modelId" type="button" class="btn btn-link px-3 me-2">
-                        <i class="fa-solid fa-user-large" style="color:#ffca04"></i> 
+                        <i class="fa-solid fa-user-large" style="color:#ffca04"></i>
                     </button>
                     <button data-bs-toggle="modal" data-bs-target="#registerId" type="button" class="btn btn-primary me-3">
                         Register
@@ -103,53 +95,99 @@
     </nav>
     <!-- Navbar ends -->
 
-
     <!-- modal-login start -->
-   <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
-       <div class="modal-dialog" role="document">
-           <div class="modal-content">
-               <div class="modal-header">
-                   <h5 class="modal-title">Modal title</h5>
-                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-               </div>
-               <div class="modal-body">
-                   Body
-               </div>
-               <div class="modal-footer">
-                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                   <button type="button" class="btn btn-primary">Save</button>
-               </div>
-           </div>
-       </div>
-   </div>
-    <!-- modal-login ends -->
-
-
-
-     <!-- modal-register start -->
-<!-- Button trigger modal -->
-
-<!-- Modal -->
-<div class="modal fade" id="registerId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">Modal title</h5>
+    <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Login</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                Body
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <!-- Email input -->
+                        <div class="form-outline mb-4">
+                          <input type="email" id="form2Example1" class="form-control" />
+                          <label class="form-label" for="form2Example1">Email address</label>
+                        </div>
+                      
+                        <!-- Password input -->
+                        <div class="form-outline mb-4">
+                          <input type="password" id="form2Example2" class="form-control" />
+                          <label class="form-label" for="form2Example2">Password</label>
+                        </div>
+                        <div class="mt-2 mb-2">
+<button type="reset" class="btn btn-danger btn-block ">Temizle</button>
+                        <button type="submit" class="btn btn-primary btn-block ">Sign in</button>
+                        </div>
+                        
+                      
+                        <!-- 2 column grid layout for inline styling -->
+                        <div class="row mb-4">
+                          <div class="col d-flex justify-content-center ">
+                            <!-- Checkbox -->
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="form2Example34" checked />
+                              <label class="form-check-label" for="form2Example34"> Remember me </label>
+                            </div>
+                          </div>
+                      
+                          <div class="col">
+                            <a href="#!">Forgot password?</a>
+                          </div>
+
+                          <div class="col">
+                             <a href="#!">Register</a>
+                          </div>
+                     
+                        </div>
+                      
+                      
+                        <!-- Register buttons -->
+                        <div class="text-center">
+                          
+                          <button type="button" class="btn btn-primary btn-floating mx-1 rounded-circle">
+                            <i class="fab fa-facebook-f"></i>
+                          </button>
+                      
+                          <button type="button" class="btn btn-primary btn-floating mx-1 rounded-circle">
+                            <i class="fab fa-google"></i>
+                          </button>
+                      
+                          <button type="button" class="btn btn-primary btn-floating mx-1 rounded-circle">
+                            <i class="fab fa-twitter"></i>
+                          </button>
+                      
+                          <button type="button" class="btn btn-primary btn-floating mx-1 rounded-circle">
+                            <i class="fab fa-github"></i>
+                          </button>
+                        </div>
+                      </form>
+                </div>
             </div>
         </div>
     </div>
-</div>
+    <!-- modal-login ends -->
 
-      <!-- modal-register end -->
-
+    <!-- modal-register start -->
+    <div class="modal fade" id="registerId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Body
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save</button>
+                </div>
+                </div>
+                </div>
+                </div>
+    <!-- modal-register end -->
 
     <!-- header start -->
     <header>
@@ -170,29 +208,46 @@
     <main>
 
         <!-- section -->
-        <section class="mt-5">
+        <section class="mt-5" id="about-1">
             <div class="container">
                 <div class="row justify-content-between align-items-center">
+                    <h4 id="special_aboutme" class="text-center mb-5 mt-5 text-uppercase display-4"> Hakkımda</h4>
                     <div class="col-md-6">
-
                         <img src="picture/img-1.jpg" class="w-100 shadow" alt="">
-
                     </div>
                     <div class="col-md-5">
                         <h6 class="title mb-3 text-dark">Lorem ipsum dolor sit amet, consectetur.</h6>
-
                         <p class="text-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae autem rem
                             impedit molestiae hic ducimus, consequuntur ullam dolorem quaerat beatae labore explicabo,
                             sint laboriosam aperiam nihil inventore facilis. Quasi, facilis.</p>
                         <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur,
                             amet!</p>
                         <button class="btn btn-outline-primary btn-sm">Learn More</button>
+                        </div>
+                        </div>
+                        </div>
+                        </section>
+                        
+                        <!-- section -->
+                        <section class="mt-5" id="about-2">
+                            <div class="container">
+                                <div class="row justify-content-between align-items-center">
+                            
+                            <div class="col-md-5">
+                                <h6 class="title mb-3 text-dark">Lorem ipsum dolor sit amet, consectetur.</h6>
+                                <p class="text-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae autem rem
+                                    impedit molestiae hic ducimus, consequuntur ullam dolorem quaerat beatae labore explicabo,
+                                    sint laboriosam aperiam nihil inventore facilis. Quasi, facilis.</p>
+                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur,
+                                    amet!</p>
+                                <button class="btn btn-outline-primary btn-sm">Learn More</button>
+                                </div>
+<div class="col-md-6">
+    <img src="picture/img-3.jpg" class="w-100 shadow" alt="">
+                                </div>
+                        </div>
                     </div>
-                </div>
-                <!-- End of Row -->
-            </div>
-            <!-- End of Container -->
-        </section><!-- End of Section -->
+                    </section>
 
         <section>
             <!-- card -->
