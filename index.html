@@ -1,7 +1,6 @@
 <!doctype html>
-<html lang="tr">
-
-<head>
+<html lang="en">
+  <head>
     <!-- title-->
     <title>My One Page</title>
 
@@ -26,34 +25,27 @@
     <!-- Font awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
 
-    <!-- External CSS -->
-    <link rel="stylesheet" href="style.css">
+        <!-- External CSS -->
+        <link rel="stylesheet" href="style.css">
 
-    <!-- External JS -->
-    <script src="template.js"></script>
-</head>
+        <!-- External JS -->
+        <script src="template.js"></script>
 
-<body data-target=".navbar" data-offset="44" data-spy="scroll">
-    <!-- start codes -->
-
-    <!-- navbar start -->
+  </head>
+  <body data-target=".navbar" data-offset="44" data-spy="scroll">
+<!-- navbar start -->
     <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
-        <div class="container">
-            <!-- logo -->
-            <a class="navbar-brand" href="index.html">
-                <img src="picture/favicon.png" id="logo_id" />
-            </a>
-            <!-- button toggler -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <div class="container">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <!-- navbar menu -->
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Anasayfa <span class="sr-only"></span></a>
                     </li>
@@ -61,15 +53,10 @@
                         <a class="nav-link" href="#special_aboutme">Hakkımızda</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Product
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="#">Action 1</a>
+                            <a class="dropdown-item" href="#">Action 2</a>
                         </div>
                     </li>
                     <li class="nav-item">
@@ -79,7 +66,6 @@
                         <a class="nav-link" href="#special_contact">Contact</a>
                     </li>
                 </ul>
-
                 <ul class="navbar-nav ml-auto mr-4">
                     <li class="nav-item">
                         <button type="button" class="btn btn-primary btn-sm" data-toggle="modal"
@@ -88,18 +74,17 @@
                         </button>
                     </li>
                 </ul>
-
-                <form class="form-inline my-2 my-lg-0 ">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Arama</button>
+                <form class="d-flex my-2 my-lg-0">
+                    <input class="form-control me-sm-2" type="text" placeholder="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                 </form>
             </div>
-        </div>
+      </div>
     </nav>
-    <!-- navbar ends -->
+<!-- navbar end -->
 
-    <!-- modal-register start -->
-    <div class="modal fade" id="login_register" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+        <!-- modal-register start -->
+        <div class="modal fade" id="login_register" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -119,23 +104,22 @@
     </div>
     <!-- modal-register ends -->
 
-    <!-- header start -->
-    <header>
-        <div class="jumbotron text-white bg-dark">
-            <div class="container" style="opacity:.9">
-                <!-- div.p-5.text-center.text-white.bg-dark>h1.mb-3{Heading}+h4.mb-3{sub title}+a.btn.btn-primary{More..} -->
-                <div class="p-5 text-center text-white bg-dark">
-                    <h1 class="mb-3">Turkcell Full Stack Java Eğitimine Hoşgeldiniz</h1>
-                    <h4 class="mb-3">Html5 Css3 RD Bootstrap</h4>
-                    <a href="" class="btn btn-primary">More..</a>
+        <!-- header start -->
+        <header>
+            <div class="jumbotron text-white bg-dark">
+                <div class="container" style="opacity:.9">
+                    <!-- div.p-5.text-center.text-white.bg-dark>h1.mb-3{Heading}+h4.mb-3{sub title}+a.btn.btn-primary{More..} -->
+                    <div class="p-5 text-center text-white bg-dark">
+                        <h1 class="mb-3">Turkcell Full Stack Java Eğitimine Hoşgeldiniz</h1>
+                        <h4 class="mb-3">Html5 Css3 RD Bootstrap</h4>
+                        <a href="" class="btn btn-primary">More..</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </header>
-    <!-- header ends -->
+        </header>
+        <!-- header ends -->
 
-
-    <!-- main start -->
+          <!-- main start -->
     <main>
         <section>
             <!-- card -->
@@ -200,29 +184,13 @@
                     </div>
                 </div>
                 <div class="col"></div>
-
-
-                <!-- about-me -->
-                <div class="container" id="special_aboutme">
-                    <p class="display-4 text-center text-uppercase mb-4 mt-5">Hakkımızda</p>
-                    <div class="row">
-
-                        <div class="col-md-7">
-                            <img src="picture/2.jpg" alt="" style="width:40rem;">
-                        </div>
-                        <div class="col-md-5">
-                            <p class="line_clamp16">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quia
-                                quasi, ipsum ullam officiis, at commodi assumenda enim adipisci doloribus beatae nihil
-                                iure
-                                odio natus, laborum repellat corporis quo. Necessitatibus?
-                                Repudiandae minima voluptate unde laborum beatae dolores doloribus natus fuga inventore.
-                                Officia, impedit repudiandae eveniet eligendi pariatur </p>
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
     </main>
+
+
+    <p class="p-4"> padding size Lorem ipsum dolor sit amet.</p>
+
     <!-- main ends -->
     <br><br><br><br><br><br><br><br><br><br><br>
     <!-- footer start -->
@@ -267,7 +235,11 @@
             </section>
 
             <section class="mb-3" style="text-align: justify;">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis fuga odio harum eaque nihil animi culpa maiores perspiciatis quia at! Qui similique distinctio iusto modi, illum iure quo dolor? Rerum nam non labore quibusdam nemo vel reprehenderit totam accusantium natus? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore nisi quis dicta reiciendis non quidem vitae totam impedit, aut quasi!</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis fuga odio harum eaque nihil animi
+                    culpa maiores perspiciatis quia at! Qui similique distinctio iusto modi, illum iure quo dolor? Rerum
+                    nam non labore quibusdam nemo vel reprehenderit totam accusantium natus? Lorem ipsum dolor sit amet
+                    consectetur, adipisicing elit. Tempore nisi quis dicta reiciendis non quidem vitae totam impedit,
+                    aut quasi!</p>
             </section>
 
             <section class="mt-2">
@@ -292,7 +264,6 @@
                         </ul>
                     </div>
 
-
                     <div class="col-lg-3 col-md-6 mb-3 mb-md-0">
                         <h5 class="text-uppercase">Web Link</h5>
                         <ul class="list-unstyled mb-0">
@@ -302,7 +273,6 @@
                             <li> <a href="#" class="text-white">Workstation-1</a> </li>
                         </ul>
                     </div>
-
 
                     <div class="col-lg-3 col-md-6 mb-3 mb-md-0">
                         <h5 class="text-uppercase">Web Link</h5>
@@ -315,16 +285,15 @@
                     </div>
                 </div>
             </section>
-<div class="text-center p-4" style="background: rgba(0,0,0,0.6);"> @2022 Copyright : <a class="text-white" href="https://www.hamitmizrak.com.tr" >HM</a></div>
+            <div class="text-center p-4" style="background: rgba(0,0,0,0.6);"> @2022 Copyright : <a class="text-white"
+                    href="https://www.hamitmizrak.com.tr">HM</a></div>
         </div> <!-- container-end  -->
     </footer>
     <!-- footer ends -->
-
-    <!-- ends codes -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
-    </script>
-</body>
-
+    
+      
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+  </body>
 </html>
