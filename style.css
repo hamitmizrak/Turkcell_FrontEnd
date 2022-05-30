@@ -87,5 +87,10 @@ p {
 footer{
     min-height: 20rem;
     width:auto;
-    background:#343a40;
+    background-color:#212529;
+   
+}
+
+footer > h6,p,div{
+    color:white;
 }
