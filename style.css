@@ -70,7 +70,7 @@ header{
     padding-top:12rem;
     height:40rem;
     z-index: -1;
-    opacity: .98;
+background-color: black!important;
 }
 
 
@@ -88,4 +88,5 @@ footer{
     min-height: 20rem;
     width:auto;
     background:#343a40;
+    
 }
