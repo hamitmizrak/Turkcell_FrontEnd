@@ -110,24 +110,34 @@ multi-line comment
 
 ////////////////////////////////////////////////
 //undefined: tanımlı değil yani değer vermezsek bu sorunu yazarız
-var x1;
-console.log(x1)
+// var x1;
+// console.log(x1)
 
 //NaN:  Not A Number : sayı değil
-var x2=9/"asd";
-console.log(x2);
+// var x2=9/"asd";
+// console.log(x2);
 
 //isNaN
 
 //Infinity: sonsuz 
-var x3=8/0;
-console.log(x3);
+// var x3=8/0;
+// console.log(x3);
 
 //new   : ram hafızasında yer açmak (Doğar)
 
 //null  : hafızayı boşaltmak (ölür)
+//var x4=null;
 
 //sıfır : bir değeri vardır ama sıfırdır. çarpmada yutan eleman ,toplama: etkisiz
+
+////////////////////////////////////////////////
+//escape character
+console.log("\"")
+console.log("'")
+
+
+////////////////////////////////////////////////
+//Math
 
 
 
