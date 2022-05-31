@@ -71,30 +71,44 @@ multi-line comment
 // ==  eşit mi (ancak türüne bakma)  "5" 5 TRUE
 // === eşit mi (türüne bak)          "5" 5 FALSE
 
-var result1="Malatya";
-console.log(typeof result1)  //type: türü bulmak
+// var result1="Malatya";
+// console.log(typeof result1)  //type: türü bulmak
 
-var result2=44.36;
-console.log(typeof result2)  //type: türü bulmak
+// var result2=44.36;
+// console.log(typeof result2)  //type: türü bulmak
 
-var result3=true;
-console.log(typeof result3)  //type: türü bulmak
+// var result3=true;
+// console.log(typeof result3)  //type: türü bulmak
 
 
 ////////////////////////////////////////////////
+//Örnek-1
+// var x1=9,x2=2,x3;
+// x3=x1+x2;
+// console.log(x3)
 
-var x1=9,x2=2,x3;
-x3=x1+x2;
-console.log(x3)
+// x3=x1*x2;
+// console.log(x3)
 
-x3=x1*x2;
-console.log(x3)
+// x3=x1/x2;
+// console.log(x3)
 
-x3=x1/x2;
-console.log(x3)
+// x3=x1%x2;
+// console.log(x3)
 
-x3=x1%x2;
-console.log(x3)
+////////////////////////////////////////////////
+
+//CAST: dönüştürmek
+// Number()
+// String()
+
+//string number 
+//database - api - socket 
+
+var x1=  Number(prompt("lütfen bir sayı giriniz")) ;
+console.log(x1*x1);
+
+
 
 
 
