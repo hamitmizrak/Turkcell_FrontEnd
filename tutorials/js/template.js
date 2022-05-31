@@ -81,6 +81,22 @@ var result3=true;
 console.log(typeof result3)  //type: türü bulmak
 
 
+////////////////////////////////////////////////
+
+var x1=9,x2=2,x3;
+x3=x1+x2;
+console.log(x3)
+
+x3=x1*x2;
+console.log(x3)
+
+x3=x1/x2;
+console.log(x3)
+
+x3=x1%x2;
+console.log(x3)
+
+
 
 
 
