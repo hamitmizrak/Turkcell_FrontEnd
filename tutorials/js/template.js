@@ -253,13 +253,19 @@ document.write("hepsi büyük harf: "+kelime.toUpperCase()+"<br>")
 document.write("startsWith: "+kelime.startsWith('h')+"<br>")
 document.write("endsWith: "+kelime.endsWith(' ')+"<br>")
 
-
 document.write("concat: "+kelime.concat(" -sona eklendi")+"<br>")
 
-document.write("charAt: "+kelime.charAt("0")+"<br>")
+var degistirilmis="Merhabalar";
+document.write("replace: "+kelime.replace(kelime,degistirilmis)+"<br>")
 
+document.write("substring-1: "+kelime.substring(6)+"<br>")
+document.write("substring-2: "+kelime.substring(0,4)+"<br>") // 0 <= X <= 4-1
+
+document.write("charAt: "+kelime.charAt("0")+"<br>")
 document.write("indexOf: "+kelime.indexOf("css3")+"<br>")
-document.write("indexOf: "+kelime.lastIndexOf("css3")+"<br>")
+document.write("lastIndexOf: "+kelime.lastIndexOf("css3")+"<br>")
+
+
 
 
 
