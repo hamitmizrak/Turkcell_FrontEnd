@@ -223,6 +223,21 @@ document.write(decimal.toString(2)+"<br>")
 document.write(decimal.toString(8)+"<br>")
 document.write(decimal.toString(16)+"<br>")
 
+//CAST
+var castNumber="14";
+document.write(castNumber+castNumber+"<br>")
+//Number()
+document.write(Number(castNumber)+Number(castNumber)+"<br>");
+
+//NaN: Not a Number
+document.write("result: "+ (16/"asd")+"<br>")
+
+//isNaN
+var numberx=200/"asd";
+//isNaN= false ==> sayıdır
+//isNaN= true ==>  sayı değildir
+document.write("result2: "+ isNaN(numberx))
+
 
 
 
