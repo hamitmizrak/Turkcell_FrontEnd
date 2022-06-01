@@ -160,36 +160,68 @@ multi-line comment
 // document.write("sinüs: "+Math.sin(45)+"<br>")
 
 // Kullanıcıda tarafından aldığımız 2 tane sayının
-var number1,number2;
-number1=Number(prompt("1.sayıyı giriniz"));
-number2=Number(prompt("2.sayıyı giriniz"));
+// var number1,number2;
+// number1=Number(prompt("1.sayıyı giriniz"));
+// number2=Number(prompt("2.sayıyı giriniz"));
 
-// s1-) Bu sayılardan en küçüğü nedir ?
-document.write("En küçüğü: "+ Math.min(number1,number2)+"<br/>")
+// // s1-) Bu sayılardan en küçüğü nedir ?
+// document.write("En küçüğü: "+ Math.min(number1,number2)+"<br/>")
 
-// s2-) Bu sayılardan en büyüğü nedir ?
-document.write("En küçüğü: "+ Math.max(number1,number2)+"<br/>")
+// // s2-) Bu sayılardan en büyüğü nedir ?
+// document.write("En küçüğü: "+ Math.max(number1,number2)+"<br/>")
 
-// s3-) Bu sayılardan en büyüğü karekökü nedir ?
-// monad: 
-document.write("en büyüğü karekök: "+Math.sqrt(Math.abs(Math.max(number1,number2)))  +"<br/>")
+// // s3-) Bu sayılardan en büyüğü karekökü nedir ?
+// // monad: 
+// document.write("en büyüğü karekök: "+Math.sqrt(Math.abs(Math.max(number1,number2)))  +"<br/>")
 
-// s4-) Bu sayılardan en büyüğü karekökünün üste yuvarlıyalım nedir ?
-document.write("en büyüğü karekökünün üste yuvarlı: "+Math.ceil(Math.sqrt(Math.abs(Math.max(number1,number2))))    +"<br/>")
+// // s4-) Bu sayılardan en büyüğü karekökünün üste yuvarlıyalım nedir ?
+// document.write("en büyüğü karekökünün üste yuvarlı: "+Math.ceil(Math.sqrt(Math.abs(Math.max(number1,number2))))    +"<br/>")
 
-// s5-) Bu sayılardan en küçüğü mutlak nedir ?
+// // s5-) Bu sayılardan en küçüğü mutlak nedir ?
 
-// s6-) Bu sayılardan en küçüğü alt taban en büyüğü üst taban şeklinde üstünü alalım
+// // s6-) Bu sayılardan en küçüğü alt taban en büyüğü üst taban şeklinde üstünü alalım
 
-document.write(  "En küçüğü alt taban en büyüğü üst taban: "+
-  Math.pow(Math.abs(Math.min(number1,number2)), Math.abs(Math.max(number1,number2)))
-+
-  "<br/>"
-);
-
-
+// document.write(  "En küçüğü alt taban en büyüğü üst taban: "+
+//   Math.pow(Math.abs(Math.min(number1,number2)), Math.abs(Math.max(number1,number2)))
+// +
+//   "<br/>"
+// );
 
 
+////////////////////////////////////////////////
+//Number
+var number=44;
+number=44.33;
+document.write(number+"<br>")
+
+var bilimsel=14E+5;
+bilimsel=14E-5;
+document.write(bilimsel+"<br>")
+
+////// 10  Tabana Çevirmek//////////////////////////
+//sayı sistemleri: 2,8,16 ==> 10 tabanda gösterimi
+//2 tabanda 10 tabana çevirme
+// 2 taban = 0,1 
+var binary=0b00111;
+document.write("2 tabanda: "+binary+"<br>");
+
+//10 taban = 01 2 3 4 5 6 7 8 9
+//2 tabanda 10 tabana çevirme
+var octal=070111;
+document.write("8 tabanda: "+octal+"<br>");
+
+//16 taban=0 1 2 3 4 5 6 7 8 9 a b c d e f
+//16 tabanda 10 tabanına çevirme
+// runtime error, compiler error, syntax error
+var hexadecimal=0x11;
+document.write("16 tabanda: "+hexadecimal+"<br>");
+
+
+///// 10 tabandan diğer tabanlara
+var decimal=10;
+document.write(decimal.toString(2)+"<br>")
+document.write(decimal.toString(8)+"<br>")
+document.write(decimal.toString(16)+"<br>")
 
 
 
