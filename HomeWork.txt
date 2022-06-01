@@ -24,7 +24,75 @@ UTF, Unicode Dönüşüm Birimi anlamına gelir.
 •	UTF-16: En çok kullanılan karakterleri kodlamak için iki bayt (16 bit) kullanır
 •	UTF-32: 16 bitlik bir sayının tüm karakterleri temsil etmek için yetmediği karakterleri kodlamak için dört bayt (32 bit) kullanır.
 
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Libraries - Framework (Tuğba)
+Library: Geliştiriciler tarafından yazılan ve herhangi bir yerde yeniden kullanılabilen bir kod parçasıdır. Bir kütüphaneden bir sınıfı ya da bir işlevi istediğimiz zaman nerede kullanacağımıza biz karar veririz. Uygulama akışından siz sorumlusunuz.
+Örneğin: Bir JS kütüphanesi olan JQuery
 
+
+Framework: Bir programlama dilini base alarak geliştirilen, belirli platformlar için uygulamalar oluşturan yazılım. Frameworklerde bir yazılım mimarisi bulunmaktadır ve içerisinden bir fonksiyonu ya da bir 
+Framework: Bir programlama dilini base alarak geliştirilen, belirli platformlar için uygulamalar oluşturan yazılım. Frameworklerde bir yazılım mimarisi bulunmaktadır ve içerisinden bir fonksiyonu ya da bir metodu kullanırken uymanız gereken standartlar vardır. Framework akıştan sorumludur. 
+Örneğin: Spring Framework Java için geliştirilmiş, açık kaynak olan bir uygulama geliştirme framework'üdür.
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+SDK-JDK arasındaki fark (Kubilay)
+SDK Nedir?
+SDK (Software Development Kit), yazılım geliştirme kiti anlamına gelir ve bir uygulama veya program oluşturmak için dünya çapında kullanılan bir dizi yazılım aracı olarak tanımlanır. Bir uygulama geliştirmek için çeşitli platformlar vardır ve her forumun kendi SDK'sı vardır. 
+Örneğin, Java platformunda bir uygulamasının geliştirilmesi, bir Java Geliştirme Kiti (JDK) gerektirir. iOS uygulamaları için iOS SDK'sı gereklidir. Evrensel Windows Platformu için .NET Framework SDK kullanılabililir.
+JDK Nedir?
+JDK (Java Development Kit): Java geliştirme kiti anlamına gelir. JDK, Java'da bir program yazmak için bir yazılım geliştirme kiti olarak tanımlanabilir. Java tarafından kullanılan 3 temel teknoloji paketinden biridir JDK. Bunlar; JVM(Java Virtual Machine), JRE (Java Runtime Environment) ve JDK. JDK, Java tabanlı yazılım geliştirmeye yardımcı olan bir dizi geliştirme aracından oluşur. Çeşitli sürümleri vardır, ancak en yaygın kullanılan sürüm Java 8'dir.
+
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Fast Forward - nofastforward (Kadir)
+Fast Forward:  
+Default olarak merge işlemi fast forward olarak çalışır. Main branch'inde herhangi bir değişiklik 
+olmadıysa merge edilecek branch fast forward olarak merge edilir. Main hattının son commit hash'i olarak, 
+merge edilen branch'in hash'ini alır. Eğer main branch'inde bir değişiklik var ise merge işlemi fast forward
+olmaz ve bizden hangi değişikleri kaydedeceğimize dair taahhüt bekler.
+
+Fast Forward sonrasında değişiklikler sanki master branch'inde yapılmış gibi bir history oluşur.
+Bu history'i daha anlaşılır tutmak için merge işlemi sırasında git'e "--no-ff" opsiyonu ile gidilir.
+Bu git'in fast-forward yapmamasını ve yeni bir merge commit ile ilerlemesini sağlar.
+
+
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Merge- Rebase (Şeyda)
+Fast-forward vs Rebase 
+Benzer işlevleri yerine getirmek için kullanılır. Her iki komut da bir daldaki değişiklikleri başka bir dala birleştirmek için kullanılır. Ancak bu iki komut arasında proje tarihçesinin oluşturulması ile ilgili ciddi bir farklılık vardır.
+Bazı durumlarda branch'lerden bir tanesinde herhangi bir değişiklik yapılmamış ve bu branch'in ortak commit'i ve son commit'i aynı ise bu durumda merge işlemi çok basitleşir ve git diğer branch'in tüm commit'lerini ortak commit'in 
+üzerine ekleyerek merge işlemini yapar. Bu özel duruma Git terminolojisinde "Fast-Forward Merge" denir ve her iki branch'in tarihçesi de ortak oluyor.
+Normalde merge komutu ile A dalındaki değişiklikler B dalı ile birleştirildiğinde B dalının commit tarihçesinde merge işleminden kaynaklanan ve merge commit adı verilen otomatik oluşturulmuş bir commit yer alır. Bu commit A ve B dallarının tarihçelerini birbiri ile ilişkilendirir.
+Rebase komutu kullandığımızda ise ile A dalındaki her bir commit B 
+dalına sanki commit işlemi B dalında yapılmış gibi yeniden yazılır. Bu sayede B dalının commit tarihçesi sanki tüm değişiklikler bu dalda olmuş gibi düz ve kesintisiz görünür.
+
+
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+html - xhtml (Mehmet)
+HTML, tabletler ve telefonlar gibi mobil cihazlar için daha uygunken,
+XHTML bilgisayar ekranları için  uygundur.
+HTML, SGML'nin bir uygulaması.
+XHTML XML uygulaması.
+HTML, Boş / açık etiketlere sahip olabilir.
+XHTML Kapatılmamış tüm etiketler kapatılmalıdır
+HTML, Elemanın yapıları üzerinde katı bir kural yoktur.
+XHTML Elemanların yapısı takip edilmelidir 
+HTML, Büyük / küçük harfe duyarsız: Etiketler ve nitelikler tercihe göre büyük veya küçük harf olabilir.
+XHTML Büyük / küçük harfe duyarlı: Etiketler ve öznitelikler küçük harf olmalıdır.
+HTML, Tüm içerik body elementinin altına yerleştirilebilir.
+XHTML Tüm içerik bloklar halinde yerleştirilmelidir, (p) gövde elemanının altındadır.
+
+
+
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 display:none;
 visibility:none arasındaki fark nedir ?
 

@@ -131,13 +131,32 @@ multi-line comment
 //sıfır : bir değeri vardır ama sıfırdır. çarpmada yutan eleman ,toplama: etkisiz
 
 ////////////////////////////////////////////////
-//escape character
-console.log("\"")
-console.log("'")
+// escape character
+// console.log("\"")
+// console.log("'")
 
 
 ////////////////////////////////////////////////
-//Math
+//Math: static 
+
+// sabitler
+document.write(Math.PI+"<br/>") 
+document.write(Math.E+"<br/>") 
+
+// Math
+document.write(Math.random()+"<br/>") 
+document.write(Math.min(5,2,5,21,-525)+"<br>")
+document.write(Math.max(5,2,5,2151,-525)+"<br>")
+document.write(Math.sqrt(16)+"<br>")
+document.write(Math.pow(2,5)+"<br>")
+document.write(Math.abs(-4)+"<br>")
+
+// yuvarlama floor 
+document.write(Math.floor(3.9)+"<br>")
+document.write(Math.ceil(5.1)+"<br>")
+document.write(Math.round(2.5)+"<br>")
+
+
 
 
 
