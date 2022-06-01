@@ -139,31 +139,54 @@ multi-line comment
 ////////////////////////////////////////////////
 //Math: static 
 
-// sabitler
-document.write(Math.PI+"<br/>") 
-document.write(Math.E+"<br/>") 
+// // sabitler
+// document.write(Math.PI+"<br/>") 
+// document.write(Math.E+"<br/>") 
 
-// Math
-document.write(Math.random()+"<br/>") 
-document.write(Math.min(5,2,5,21,-525)+"<br>")
-document.write(Math.max(5,2,5,2151,-525)+"<br>")
-document.write(Math.sqrt(16)+"<br>")
-document.write(Math.pow(2,5)+"<br>")
-document.write(Math.abs(-4)+"<br>")
+// // Math
+// document.write(Math.random()+"<br/>") 
+// document.write(Math.min(5,2,5,21,-525)+"<br>")
+// document.write(Math.max(5,2,5,2151,-525)+"<br>")
+// document.write(Math.sqrt(16)+"<br>")
+// document.write(Math.pow(2,5)+"<br>")
+// document.write(Math.abs(-4)+"<br>")
 
-// yuvarlama floor 
-document.write(Math.floor(3.9)+"<br>")
-document.write(Math.ceil(5.1)+"<br>")
-document.write(Math.round(2.5)+"<br>")
+// // yuvarlama floor 
+// document.write(Math.floor(3.9)+"<br>")
+// document.write(Math.ceil(5.1)+"<br>")
+// document.write(Math.round(2.5)+"<br>")
 
+// // sin cos tan cot   
+// document.write("sinüs: "+Math.sin(45)+"<br>")
 
 // Kullanıcıda tarafından aldığımız 2 tane sayının
+var number1,number2;
+number1=Number(prompt("1.sayıyı giriniz"));
+number2=Number(prompt("2.sayıyı giriniz"));
+
 // s1-) Bu sayılardan en küçüğü nedir ?
+document.write("En küçüğü: "+ Math.min(number1,number2)+"<br/>")
+
 // s2-) Bu sayılardan en büyüğü nedir ?
+document.write("En küçüğü: "+ Math.max(number1,number2)+"<br/>")
+
 // s3-) Bu sayılardan en büyüğü karekökü nedir ?
+// monad: 
+document.write("en büyüğü karekök: "+Math.sqrt(Math.abs(Math.max(number1,number2)))  +"<br/>")
+
 // s4-) Bu sayılardan en büyüğü karekökünün üste yuvarlıyalım nedir ?
+document.write("en büyüğü karekökünün üste yuvarlı: "+Math.ceil(Math.sqrt(Math.abs(Math.max(number1,number2))))    +"<br/>")
+
 // s5-) Bu sayılardan en küçüğü mutlak nedir ?
+
 // s6-) Bu sayılardan en küçüğü alt taban en büyüğü üst taban şeklinde üstünü alalım
+
+document.write(  "En küçüğü alt taban en büyüğü üst taban: "+
+  Math.pow(Math.abs(Math.min(number1,number2)), Math.abs(Math.max(number1,number2)))
++
+  "<br/>"
+);
+
 
 
 
