@@ -39,7 +39,7 @@ multi-line comment
 // 44soyisim="Mızrak"; //sayı ile başlayamayız
 
 //camelCase ile değişken adlarını oluşturalım
-//unique 
+//unique
 //ingilizce kelimeler
 //console.log(_soyisim44)
 
@@ -52,12 +52,12 @@ multi-line comment
 
 ////////////////////////////////////////////////
 //Operator
-//logic operators       : &&=VE  ||=VEYA 
-//mathematics operators : + - / * % 
+//logic operators       : &&=VE  ||=VEYA
+//mathematics operators : + - / * %
 //comparison operators: > >= < <= ! ==  ===
 //postfix ==>  x++ ,  ++x ,  y-- ,  --y
 
-// 1 byte = 8 bit 
+// 1 byte = 8 bit
 // bit < byte < GB < TB
 // 1 bit =0
 // Binary codes (2) ==> (0 1)
@@ -67,7 +67,7 @@ multi-line comment
 
 ////////////////////////////////////////////////
 
-// =   atama 
+// =   atama
 // ==  eşit mi (ancak türüne bakma)  "5" 5 TRUE
 // === eşit mi (türüne bak)          "5" 5 FALSE
 
@@ -79,7 +79,6 @@ multi-line comment
 
 // var result3=true;
 // console.log(typeof result3)  //type: türü bulmak
-
 
 ////////////////////////////////////////////////
 //Örnek-1
@@ -102,8 +101,8 @@ multi-line comment
 // Number()
 // String()
 
-//string number 
-//database - api - socket 
+//string number
+//database - api - socket
 
 // var x1=  Number(prompt("lütfen bir sayı giriniz")) ;
 // console.log(x1*x1);
@@ -119,7 +118,7 @@ multi-line comment
 
 //isNaN
 
-//Infinity: sonsuz 
+//Infinity: sonsuz
 // var x3=8/0;
 // console.log(x3);
 
@@ -135,28 +134,27 @@ multi-line comment
 // console.log("\"")
 // console.log("'")
 
-
 ////////////////////////////////////////////////
-//Math: static 
+//Math: static
 
 // // sabitler
-// document.write(Math.PI+"<br/>") 
-// document.write(Math.E+"<br/>") 
+// document.write(Math.PI+"<br/>")
+// document.write(Math.E+"<br/>")
 
 // // Math
-// document.write(Math.random()+"<br/>") 
+// document.write(Math.random()+"<br/>")
 // document.write(Math.min(5,2,5,21,-525)+"<br>")
 // document.write(Math.max(5,2,5,2151,-525)+"<br>")
 // document.write(Math.sqrt(16)+"<br>")
 // document.write(Math.pow(2,5)+"<br>")
 // document.write(Math.abs(-4)+"<br>")
 
-// // yuvarlama floor 
+// // yuvarlama floor
 // document.write(Math.floor(3.9)+"<br>")
 // document.write(Math.ceil(5.1)+"<br>")
 // document.write(Math.round(2.5)+"<br>")
 
-// // sin cos tan cot   
+// // sin cos tan cot
 // document.write("sinüs: "+Math.sin(45)+"<br>")
 
 // Kullanıcıda tarafından aldığımız 2 tane sayının
@@ -171,7 +169,7 @@ multi-line comment
 // document.write("En küçüğü: "+ Math.max(number1,number2)+"<br/>")
 
 // // s3-) Bu sayılardan en büyüğü karekökü nedir ?
-// // monad: 
+// // monad:
 // document.write("en büyüğü karekök: "+Math.sqrt(Math.abs(Math.max(number1,number2)))  +"<br/>")
 
 // // s4-) Bu sayılardan en büyüğü karekökünün üste yuvarlıyalım nedir ?
@@ -187,7 +185,6 @@ multi-line comment
 //   "<br/>"
 // );
 
-
 ////////////////////////////////////////////////
 // //Number
 // var number=44;
@@ -201,7 +198,7 @@ multi-line comment
 // ////// 10  Tabana Çevirmek//////////////////////////
 // //sayı sistemleri: 2,8,16 ==> 10 tabanda gösterimi
 // //2 tabanda 10 tabana çevirme
-// // 2 taban = 0,1 
+// // 2 taban = 0,1
 // var binary=0b00111;
 // document.write("2 tabanda: "+binary+"<br>");
 
@@ -215,7 +212,6 @@ multi-line comment
 // // runtime error, compiler error, syntax error
 // var hexadecimal=0x11;
 // document.write("16 tabanda: "+hexadecimal+"<br>");
-
 
 // ///// 10 tabandan diğer tabanlara
 // var decimal=10;
@@ -238,32 +234,31 @@ multi-line comment
 // //isNaN= true ==>  sayı değildir
 // document.write("result2: "+ isNaN(numberx))
 
-
 ////////////////////////////////////////////////
 //String
 //Dikakt: length aç kapa parentez yoktur.
-var kelime="html5 css3 responsive Bootstrap JAVASCRIPT css3 ";
-document.write(kelime+"<br>")
-document.write("harf sayısı: "+kelime.length+"<br>")
-document.write("trimlenmiş harf sayısı: "+kelime.trim().length+"<br>")
+// var kelime="html5 css3 responsive Bootstrap JAVASCRIPT css3 ";
+// document.write(kelime+"<br>")
+// document.write("harf sayısı: "+kelime.length+"<br>")
+// document.write("trimlenmiş harf sayısı: "+kelime.trim().length+"<br>")
 
-document.write("hepsi küçük harf: "+kelime.toLowerCase()+"<br>")
-document.write("hepsi büyük harf: "+kelime.toUpperCase()+"<br>")
+// document.write("hepsi küçük harf: "+kelime.toLowerCase()+"<br>")
+// document.write("hepsi büyük harf: "+kelime.toUpperCase()+"<br>")
 
-document.write("startsWith: "+kelime.startsWith('h')+"<br>")
-document.write("endsWith: "+kelime.endsWith(' ')+"<br>")
+// document.write("startsWith: "+kelime.startsWith('h')+"<br>")
+// document.write("endsWith: "+kelime.endsWith(' ')+"<br>")
 
-document.write("concat: "+kelime.concat(" -sona eklendi")+"<br>")
+// document.write("concat: "+kelime.concat(" -sona eklendi")+"<br>")
 
-var degistirilmis="Merhabalar";
-document.write("replace: "+kelime.replace(kelime,degistirilmis)+"<br>")
+// var degistirilmis="Merhabalar";
+// document.write("replace: "+kelime.replace(kelime,degistirilmis)+"<br>")
 
-document.write("substring-1: "+kelime.substring(6)+"<br>")
-document.write("substring-2: "+kelime.substring(0,4)+"<br>") // 0 <= X <= 4-1
+// document.write("substring-1: "+kelime.substring(6)+"<br>")
+// document.write("substring-2: "+kelime.substring(0,4)+"<br>") // 0 <= X <= 4-1
 
-document.write("charAt: "+kelime.charAt("0")+"<br>")
-document.write("indexOf: "+kelime.indexOf("css3")+"<br>")
-document.write("lastIndexOf: "+kelime.lastIndexOf("css3")+"<br>")
+// document.write("charAt: "+kelime.charAt("0")+"<br>")
+// document.write("indexOf: "+kelime.indexOf("css3")+"<br>")
+// document.write("lastIndexOf: "+kelime.lastIndexOf("css3")+"<br>")
 
 //CAST
 //String()
@@ -280,13 +275,43 @@ document.write("lastIndexOf: "+kelime.lastIndexOf("css3")+"<br>")
 //S-8) girdiğiniz 0 ile 4 arasındaki indexi ekranda gösterin   ?
 //S-9) Kullanıcıdan alınan başka bir kelimeyle birinci olan kelimeyle yer değiştirmek ?
 
+//JSON nedir ?
+//stringify: JSON verisini string'e çevirmek
+var obje = {
+  adi: 'Hamit',
+  soyadi: 'Mızrak',
+  diller: 5,
+  turkish: true,
+}
+console.log(obje)
+document.write(obje + '<br>')
+
+//JSON String'e çevir
+var objectToString = JSON.stringify(obje)
+document.write(objectToString)
+
+//1.adım: adınızı ve soyadınızı json objesine ekleyip
+//2.adım: bu json objesini String'e çevirip
+//3.adım: bu json objesini String'e çevirilmiş kısımdan substring fonksiyon metodu ile isim ve soyismini ayrıştır
+//4.adım: adınızı ve soyasınız document.write ile ekranda gösterelim.
+//ip uçu: JSON.stringfy  ve substring()
+
+//1.adım:
+var nameSurname = {
+  "name": 'Hamit',
+  "surname": 'Mızrak',
+}
+//2.adım
+//json'ı string'e çevirdim
+var nameAndSurnameJsontoString = JSON.stringify(nameSurname) 
+
+//3.adım
+//ipucu almak (indexOf veya search)
+var searchResult = nameAndSurnameJsontoString.search('Hamit')
+document.write("<br>"+searchResult)
+//çıktısı: 9 başlıyor
 
 
-
-
-
-
-
-
-
-
+var name = nameAndSurnameJsontoString.substring(9, 14)
+var surname = nameAndSurnameJsontoString.substring(27, 33)
+document.write('<br>' + 'Adım: ' + name + '<br> Soyadım: ' + surname)
