@@ -189,54 +189,78 @@ multi-line comment
 
 
 ////////////////////////////////////////////////
-//Number
-var number=44;
-number=44.33;
-document.write(number+"<br>")
+// //Number
+// var number=44;
+// number=44.33;
+// document.write(number+"<br>")
 
-var bilimsel=14E+5;
-bilimsel=14E-5;
-document.write(bilimsel+"<br>")
+// var bilimsel=14E+5;
+// bilimsel=14E-5;
+// document.write(bilimsel+"<br>")
 
-////// 10  Tabana Çevirmek//////////////////////////
-//sayı sistemleri: 2,8,16 ==> 10 tabanda gösterimi
-//2 tabanda 10 tabana çevirme
-// 2 taban = 0,1 
-var binary=0b00111;
-document.write("2 tabanda: "+binary+"<br>");
+// ////// 10  Tabana Çevirmek//////////////////////////
+// //sayı sistemleri: 2,8,16 ==> 10 tabanda gösterimi
+// //2 tabanda 10 tabana çevirme
+// // 2 taban = 0,1 
+// var binary=0b00111;
+// document.write("2 tabanda: "+binary+"<br>");
 
-//10 taban = 01 2 3 4 5 6 7 8 9
-//2 tabanda 10 tabana çevirme
-var octal=070111;
-document.write("8 tabanda: "+octal+"<br>");
+// //10 taban = 01 2 3 4 5 6 7 8 9
+// //2 tabanda 10 tabana çevirme
+// var octal=070111;
+// document.write("8 tabanda: "+octal+"<br>");
 
-//16 taban=0 1 2 3 4 5 6 7 8 9 a b c d e f
-//16 tabanda 10 tabanına çevirme
-// runtime error, compiler error, syntax error
-var hexadecimal=0x11;
-document.write("16 tabanda: "+hexadecimal+"<br>");
+// //16 taban=0 1 2 3 4 5 6 7 8 9 a b c d e f
+// //16 tabanda 10 tabanına çevirme
+// // runtime error, compiler error, syntax error
+// var hexadecimal=0x11;
+// document.write("16 tabanda: "+hexadecimal+"<br>");
 
 
-///// 10 tabandan diğer tabanlara
-var decimal=10;
-document.write(decimal.toString(2)+"<br>")
-document.write(decimal.toString(8)+"<br>")
-document.write(decimal.toString(16)+"<br>")
+// ///// 10 tabandan diğer tabanlara
+// var decimal=10;
+// document.write(decimal.toString(2)+"<br>")
+// document.write(decimal.toString(8)+"<br>")
+// document.write(decimal.toString(16)+"<br>")
 
-//CAST
-var castNumber="14";
-document.write(castNumber+castNumber+"<br>")
-//Number()
-document.write(Number(castNumber)+Number(castNumber)+"<br>");
+// //CAST
+// var castNumber="14";
+// document.write(castNumber+castNumber+"<br>")
+// //Number()
+// document.write(Number(castNumber)+Number(castNumber)+"<br>");
 
-//NaN: Not a Number
-document.write("result: "+ (16/"asd")+"<br>")
+// //NaN: Not a Number
+// document.write("result: "+ (16/"asd")+"<br>")
 
-//isNaN
-var numberx=200/"asd";
-//isNaN= false ==> sayıdır
-//isNaN= true ==>  sayı değildir
-document.write("result2: "+ isNaN(numberx))
+// //isNaN
+// var numberx=200/"asd";
+// //isNaN= false ==> sayıdır
+// //isNaN= true ==>  sayı değildir
+// document.write("result2: "+ isNaN(numberx))
+
+
+////////////////////////////////////////////////
+//String
+//Dikakt: length aç kapa parentez yoktur.
+var kelime="html5 css3 responsive Bootstrap JAVASCRIPT css3 ";
+document.write(kelime+"<br>")
+document.write("harf sayısı: "+kelime.length+"<br>")
+document.write("trimlenmiş harf sayısı: "+kelime.trim().length+"<br>")
+
+document.write("hepsi küçük harf: "+kelime.toLowerCase()+"<br>")
+document.write("hepsi büyük harf: "+kelime.toUpperCase()+"<br>")
+
+document.write("startsWith: "+kelime.startsWith('h')+"<br>")
+document.write("endsWith: "+kelime.endsWith(' ')+"<br>")
+
+
+document.write("concat: "+kelime.concat(" -sona eklendi")+"<br>")
+
+document.write("charAt: "+kelime.charAt("0")+"<br>")
+
+document.write("indexOf: "+kelime.indexOf("css3")+"<br>")
+document.write("indexOf: "+kelime.lastIndexOf("css3")+"<br>")
+
 
 
 
