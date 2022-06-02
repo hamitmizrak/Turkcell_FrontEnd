@@ -1,16 +1,33 @@
 
 HTML
-#####Araştırma Ödevleri###################
+#####Araştırma Ödevleri#################################################
 xhtml ile Html5 arasındaki farklar
 semantin non-semanatic
 table colspan rowspan nedir örneği
 
-#####Proje#################################
+#####Proje##############################################################
 register
 todo list
 
+########################################################################
+Stack Memory - Heap Memory nedir? aralarındaki Fark  (Furkan)
+
+
+
+
+########################################################################
+Compiler - Syntax - Runtime Error  (Doğuş)
+Runtime error : Çalışma zamanı hatası, bir programın düzgün çalışmasını engelleyen bir yazılım veya donanım sorunudur. Çalışma zamanı hataları, çalışmakta olduğunuz dosyadaki bilgileri kaybetmenize, dosyayla çalışmanızı engelleyen hataların oluşmasına (dosyanın bozulmasına) veya bir özelliği kullanmanızın engellenmesine yol açabilir. Çalışma zamanı hataları, uyumlu olmayan iki yazılım programı çalıştırıyorsanız, bilgisayarınızda bellek sorunları varsa veya bilgisayarınıza kötü amaçlı yazılımlar 
+
+Syntax error : Syntax hatası, bizim kod yazarken uymamız gereken kurallara uymadığımız zaman karşımıza çıkar. Buna örnek vermek gerekirse, string veri tiplerinin tırnak içinde yazılması gerekir. İşte bu noktada eğer, biz bu tırnaklardan birini koymayı unutursak burada bir yazım hatası yani syntax hatası yapmış oluruz.  Syntax hatasında Editor, biz hatalı kod satırından çıkar çıkmaz, kodu çalıştırmadan bir hata penceresi açar ve bize hatalı olduğumuzu gösterir.
+
+Compile error : Compile hatası, syntax hatasından farklı olarak, kodu çalıştırdıktan sonra farkına varabileceğiniz bir hatadır. Genellikle yanlış veya eksik yazılmış bir kelime sebep verir. Range yerine Rang gibi yada farklı harfe basma gibi küçük yanlışlıklar bu hatayı tetikler. 
+
+
+
+
 CSS 
-##################################################################
+########################################################################
 ASCII UNICODE  (Ali Furkan)
 ASCII Kodu Nedir?
 ASCII (American Standard Code for Information Interchange), bizim bilgisayarda görsel olarak girdiğimiz karakter,harf ve rakamların bilgisayar dilindeki temsil edilme şeklidir diyebiliriz.Yani bilgisayarımızın o karakteri,harfi veya rakamı belleğinde saklama biçimidir.
@@ -24,7 +41,7 @@ UTF, Unicode Dönüşüm Birimi anlamına gelir.
 •	UTF-16: En çok kullanılan karakterleri kodlamak için iki bayt (16 bit) kullanır
 •	UTF-32: 16 bitlik bir sayının tüm karakterleri temsil etmek için yetmediği karakterleri kodlamak için dört bayt (32 bit) kullanır.
 
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Libraries - Framework (Tuğba)
 Library: Geliştiriciler tarafından yazılan ve herhangi bir yerde yeniden kullanılabilen bir kod parçasıdır. Bir kütüphaneden bir sınıfı ya da bir işlevi istediğimiz zaman nerede kullanacağımıza biz karar veririz. Uygulama akışından siz sorumlusunuz.
 Örneğin: Bir JS kütüphanesi olan JQuery
@@ -35,7 +52,7 @@ Framework: Bir programlama dilini base alarak geliştirilen, belirli platformlar
 Örneğin: Spring Framework Java için geliştirilmiş, açık kaynak olan bir uygulama geliştirme framework'üdür.
 
 
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 SDK-JDK arasındaki fark (Kubilay)
 SDK Nedir?
 SDK (Software Development Kit), yazılım geliştirme kiti anlamına gelir ve bir uygulama veya program oluşturmak için dünya çapında kullanılan bir dizi yazılım aracı olarak tanımlanır. Bir uygulama geliştirmek için çeşitli platformlar vardır ve her forumun kendi SDK'sı vardır. 
@@ -45,7 +62,7 @@ JDK (Java Development Kit): Java geliştirme kiti anlamına gelir. JDK, Java'da 
 
 
 
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Fast Forward - nofastforward (Kadir)
 Fast Forward:  
 Default olarak merge işlemi fast forward olarak çalışır. Main branch'inde herhangi bir değişiklik 
@@ -60,7 +77,7 @@ Bu git'in fast-forward yapmamasını ve yeni bir merge commit ile ilerlemesini s
 
 
 
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Merge- Rebase (Şeyda)
 Fast-forward vs Rebase 
 Benzer işlevleri yerine getirmek için kullanılır. Her iki komut da bir daldaki değişiklikleri başka bir dala birleştirmek için kullanılır. Ancak bu iki komut arasında proje tarihçesinin oluşturulması ile ilgili ciddi bir farklılık vardır.
@@ -73,7 +90,7 @@ dalına sanki commit işlemi B dalında yapılmış gibi yeniden yazılır. Bu s
 
 
 
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 html - xhtml (Mehmet)
 HTML, tabletler ve telefonlar gibi mobil cihazlar için daha uygunken,
 XHTML bilgisayar ekranları için  uygundur.
@@ -92,7 +109,7 @@ XHTML Tüm içerik bloklar halinde yerleştirilmelidir, (p) gövde elemanının 
 
 
 
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 display:none;
 visibility:none arasındaki fark nedir ?
 
