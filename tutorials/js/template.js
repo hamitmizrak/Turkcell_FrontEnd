@@ -361,7 +361,7 @@ function functionName1(){
 functionName1()
 
 
-//2-) returnsuz, parametresiz function
+//2-) returnsuz, parametreli function
 function functionName2(ekmekTuru){
   document.writeln('<br>'+"returnsuz, parametresiz function: "+ekmekTuru)
 }
