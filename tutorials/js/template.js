@@ -315,3 +315,29 @@ document.write("<br>"+searchResult)
 var name = nameAndSurnameJsontoString.substring(9, 14)
 var surname = nameAndSurnameJsontoString.substring(27, 33)
 document.write('<br>' + 'Adım: ' + name + '<br> Soyadım: ' + surname)
+
+var adi=JSON.parse
+
+//////////////////////////////////////////////////////////////
+
+//Fonksiyon
+
+//Normal Function
+
+
+// var , let ,const
+//Anonymous Function
+//Arrow Function
+//Immedia Function
+
+//Adı Almak: 
+//  objectToString.substring( objectToString.indexOf(":")+2,   objectToString.indexOf(",")-1) 
+
+//  Soyadı Almak:  
+//    objectToString.substring(objectToString.lastIndexOf(":")+2,objectToString.length-2))
+
+// uzun çözüm
+//JSON.parse(JSON.stringfy(js)
+
+ 
+
