@@ -36,11 +36,12 @@
     <script src="template.js"></script>
 </head>
 
-<body data-target=".navbar" data-offset="44" data-spy="scroll">
+<body data-bs-target="#navbar_scroll" data-bs-spy="scroll">
+    <!-- data-target=".navbar" data-offset="44" data-spy="scroll" -->
     <!-- Navbar start -->
     <nav class="navbar fixed-top  navbar-expand-lg navbar-dark bg-dark">
         <!-- Container wrapper -->
-        <div class="container">
+        <div class="container" id="navbar_scroll">
             <!-- Navbar brand -->
             <a class="navbar-brand me-2" href="#">
                 <img src="https://s.turkcell.com.tr/SiteAssets/LandingPage/kampanya/dunyalar-senin-olsun/assets/img/logo.png"
@@ -58,7 +59,7 @@
                 <!-- Left links -->
                 <ul class="navbar-nav me-auto ms-5 mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link me-2" href="#special_aboutme"> <i class="fa-solid fa-desktop"></i></a>
+                        <a class="nav-link me-2" href="#about-1"> <i class="fa-solid fa-desktop"></i> About</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
