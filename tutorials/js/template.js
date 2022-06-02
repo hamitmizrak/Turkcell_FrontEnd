@@ -303,7 +303,7 @@ multi-line comment
 
 // //1-Çözüm (static)
 // //json'ı string'e çevirdim
-// var nameAndSurnameJsontoString = JSON.stringify(nameSurname) 
+// var nameAndSurnameJsontoString = JSON.stringify(nameSurname)
 // //ipucu almak (indexOf veya search)
 // var searchResult = nameAndSurnameJsontoString.search('Hamit')
 // document.write("<br>"+searchResult)
@@ -317,7 +317,7 @@ multi-line comment
 
 // //2-Çözüm (static)
 // //json'ı string'e çevirdim
-// var nameAndSurnameJsontoString2 = JSON.stringify(nameSurname) 
+// var nameAndSurnameJsontoString2 = JSON.stringify(nameSurname)
 // //ipucu almak (indexOf veya search)
 // var searchResult = nameAndSurnameJsontoString2.search('Hamit');
 // var searchResult2 = nameAndSurnameJsontoString2.search('Mızrak')
@@ -360,13 +360,11 @@ multi-line comment
 // }
 // functionName1()
 
-
 // //2-) returnsuz, parametreli function
 // function functionName2(ekmekTuru){
 //   document.writeln('<br>'+"returnsuz, parametresiz function: "+ekmekTuru)
 // }
 // functionName2('Trabzon ekmeği')
-
 
 // //3-) returnlu, parametrelisiz function
 // function functionName3(){
@@ -374,7 +372,6 @@ multi-line comment
 // }
 // var temp3= functionName3();
 // document.writeln('<br>'+temp3)
-
 
 // //4-) returnlu, parametreli function
 // function functionName4(money){
@@ -385,20 +382,74 @@ multi-line comment
 // var temp4= functionName4(200);
 // document.writeln('<br>'+temp4);
 
-
-
 //////////////////////////////////////////////////////////////
 //senkron: bir işlem biter diğerine geçer. Sırayla çalışır.
 //setTimeOut() ==> function istediğimiz zaman aralığında çalışmasını sağlarız.
-function merhaba1(){
-  document.writeln('<br>'+"1.function")
+// function merhaba1(){
+//   document.writeln('<br>'+"1.function")
+// }
+// setTimeout(merhaba1,3000);
+
+// function merhaba2(){
+//   document.writeln('<br>'+"2.function")
+// }
+// merhaba2()
+
+//////////////////////////////////////////////////////////////
+//try catch: exception handling
+// try {
+//   alert44('Merhabalar')
+// } catch (err) {
+//   document.writeln('<br>' + err.message);
+//   document.writeln('<br>' + err.name);
+// } finally {
+//   document.write('<br>' + 'db.close()')
+// }
+// document.writeln('<br>' + 'diğer satır')
+
+//////////////////////////////////////////////////////////////
+//conditional: 
+//if else 
+var number="4";
+if(number==4){
+  document.write('<br>' + "eşittir")
+}else{
+  document.write('<br>' + "değildir")
 }
-setTimeout(merhaba1,3000);
 
-function merhaba2(){
-  document.writeln('<br>'+"2.function")
+//if else 
+if(number==4)
+  document.write('<br>' + "eşittir")
+else
+  document.write('<br>' + "değildir")
+
+
+/////////
+//ternary
+var ternary= (number==4) ?"eşittir":"değildir";
+document.write('<br>' + ternary);
+
+document.write('<br>' + "++++++++")
+/////////
+//if elseif else
+var day="persembe";
+if(day==="pazartesi"){
+  document.write('<br>' + "1-pazartesi");
+}else if(day==="sali"){
+  document.write('<br>' + "2-sali");
+}else if(day==="carsamba"){
+  document.write('<br>' + "3-carsamba");
+}else if(day==="persembe"){
+  document.write('<br>' + "4-persembe");
+}else if(day==="cuma"){
+  document.write('<br>' + "5-cuma");
+}else if(day==="cumartesi"){
+  document.write('<br>' + "6-cumartesi");
+}else if(day==="pazar"){
+  document.write('<br>' + "7-pazar");
+}else {
+  document.write('<br>' + "gün yanlış çalışıldı");
 }
-merhaba2()
 
 
-
+//switch -case
