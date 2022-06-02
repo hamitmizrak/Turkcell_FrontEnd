@@ -379,28 +379,12 @@ document.writeln('<br>'+temp3)
 //4-) returnlu, parametreli function
 function functionName4(money){
   var count=money-6;
-  return 'returnlu, parametreli function Kalan Para: '+count
+  return 'returnlu, parametreli function Kalan Para: '+count;
+  
 }
 var temp4= functionName4(200);
 document.writeln('<br>'+temp4)
 
-
-
-
-
-// var , let ,const
-//Anonymous Function
-//Arrow Function
-//Immedia Function
-
-//Adı Almak: 
-//  objectToString.substring( objectToString.indexOf(":")+2,   objectToString.indexOf(",")-1) 
-
-//  Soyadı Almak:  
-//    objectToString.substring(objectToString.lastIndexOf(":")+2,objectToString.length-2))
-
-// uzun çözüm
-//JSON.parse(JSON.stringfy(js)
 
  
 
