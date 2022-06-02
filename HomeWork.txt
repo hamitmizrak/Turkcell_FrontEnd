@@ -13,6 +13,8 @@ todo list
 Stack Memory - Heap Memory nedir? aralarındaki Fark  (Furkan)
 
 
+########################################################################
+Git CVCS -DVCS nedir aralarındaki farklar nelerdir ?  (Mustafa)
 
 
 ########################################################################
