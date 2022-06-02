@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
-<!-- 
-pwd
-ls -al
-cd .
-cd ..
-cd ~
-cd /
+
+    <!-- 
+
+    pwd
+    ls -al
+    cd .
+    cd ..
+    cd ~
+    cd /
 
     git init
     git add .  
@@ -42,10 +45,44 @@ cd /
     git config --global alias.push1 "push -u origin main"
     git push1
 
+    git branch (branch listelemek)
+    git branch backend (branch oluştur)
+    git checkout backend (dallanmak)
+    git branch -D backend (silmek)
+    git checkout -b backend (Branch oluştur ve backend branchine dallal)
+
+    --------------------------------
+    fastforward ile nofastforwad arasıdnaki tek fark şekilleridir
+    --fast forward
+    NOT: ana branch add ve commit olması gerekiyor 
+    git status
+
+    git checkout -b database
+    cat >> deneme.txt
+    git add .
+    git commit -m "fast forward"
+    git checkout main
+    git merge database
+
+
+    --no fast forward
+    NOT: ana branch add ve commit olması gerekiyor 
+    git status
+
+    git checkout -b backend
+    cat >> deneme.txt
+    git add .
+    git commit -m "no fast forward"
+    git checkout main
+    git merge --no-ff backend
+
+    
+
    
 
 -->
 
 
 </body>
+
 </html>
