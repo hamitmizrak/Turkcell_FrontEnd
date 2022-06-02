@@ -355,36 +355,50 @@ multi-line comment
 //Fonksiyon:
 //Normal Function
 //1-) returnsuz, parametresiz function
-function functionName1(){
-  document.writeln('<br>'+"returnsuz, parametresiz function")
+// function functionName1(){
+//   document.writeln('<br>'+"returnsuz, parametresiz function")
+// }
+// functionName1()
+
+
+// //2-) returnsuz, parametreli function
+// function functionName2(ekmekTuru){
+//   document.writeln('<br>'+"returnsuz, parametresiz function: "+ekmekTuru)
+// }
+// functionName2('Trabzon ekmeği')
+
+
+// //3-) returnlu, parametrelisiz function
+// function functionName3(){
+//   return 'returnlu, parametresiz function 200-6 = 194TL'
+// }
+// var temp3= functionName3();
+// document.writeln('<br>'+temp3)
+
+
+// //4-) returnlu, parametreli function
+// function functionName4(money){
+//   var count=money-6;
+//   return 'returnlu, parametreli function Kalan Para: '+count;
+
+// }
+// var temp4= functionName4(200);
+// document.writeln('<br>'+temp4);
+
+
+
+//////////////////////////////////////////////////////////////
+//senkron: bir işlem biter diğerine geçer. Sırayla çalışır.
+//setTimeOut() ==> function istediğimiz zaman aralığında çalışmasını sağlarız.
+function merhaba1(){
+  document.writeln('<br>'+"1.function")
 }
-functionName1()
+setTimeout(merhaba1,3000);
 
-
-//2-) returnsuz, parametreli function
-function functionName2(ekmekTuru){
-  document.writeln('<br>'+"returnsuz, parametresiz function: "+ekmekTuru)
+function merhaba2(){
+  document.writeln('<br>'+"2.function")
 }
-functionName2('Trabzon ekmeği')
+merhaba2()
 
 
-//3-) returnlu, parametrelisiz function
-function functionName3(){
-  return 'returnlu, parametresiz function 200-6 = 194TL'
-}
-var temp3= functionName3();
-document.writeln('<br>'+temp3)
-
-
-//4-) returnlu, parametreli function
-function functionName4(money){
-  var count=money-6;
-  return 'returnlu, parametreli function Kalan Para: '+count;
-  
-}
-var temp4= functionName4(200);
-document.writeln('<br>'+temp4)
-
-
- 
 

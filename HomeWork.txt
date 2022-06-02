@@ -18,6 +18,9 @@ Git CVCS -DVCS nedir aralarındaki farklar nelerdir ?  (Mustafa)
 
 
 ########################################################################
+ Senkron nedir ? Asenkron nedir ? aralarındaki fark ? JavaScript senkron mu ? asenkron ?   (Barış)
+
+########################################################################
 Compiler - Syntax - Runtime Error  (Doğuş)
 Runtime error : Çalışma zamanı hatası, bir programın düzgün çalışmasını engelleyen bir yazılım veya donanım sorunudur. Çalışma zamanı hataları, çalışmakta olduğunuz dosyadaki bilgileri kaybetmenize, dosyayla çalışmanızı engelleyen hataların oluşmasına (dosyanın bozulmasına) veya bir özelliği kullanmanızın engellenmesine yol açabilir. Çalışma zamanı hataları, uyumlu olmayan iki yazılım programı çalıştırıyorsanız, bilgisayarınızda bellek sorunları varsa veya bilgisayarınıza kötü amaçlı yazılımlar 
 
