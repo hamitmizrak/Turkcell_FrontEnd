@@ -296,27 +296,57 @@ document.write(objectToString)
 //4.adım: adınızı ve soyasınız document.write ile ekranda gösterelim.
 //ip uçu: JSON.stringfy  ve substring()
 
-//1.adım:
 var nameSurname = {
   "name": 'Hamit',
   "surname": 'Mızrak',
 }
-//2.adım
+
+//1-Çözüm (static)
 //json'ı string'e çevirdim
 var nameAndSurnameJsontoString = JSON.stringify(nameSurname) 
-
-//3.adım
 //ipucu almak (indexOf veya search)
 var searchResult = nameAndSurnameJsontoString.search('Hamit')
 document.write("<br>"+searchResult)
 //çıktısı: 9 başlıyor
-
-
 var name = nameAndSurnameJsontoString.substring(9, 14)
 var surname = nameAndSurnameJsontoString.substring(27, 33)
 document.write('<br>' + 'Adım: ' + name + '<br> Soyadım: ' + surname)
-
 var adi=JSON.parse
+
+document.writeln('<br>'+"****************************")
+
+//2-Çözüm (static)
+//json'ı string'e çevirdim
+var nameAndSurnameJsontoString2 = JSON.stringify(nameSurname) 
+//ipucu almak (indexOf veya search)
+var searchResult = nameAndSurnameJsontoString2.search('Hamit');
+var searchResult2 = nameAndSurnameJsontoString2.search('Mızrak')
+
+//çıktısı: 9 başlıyor
+var name = nameAndSurnameJsontoString2.substring(searchResult, (searchResult+5))
+var surname = nameAndSurnameJsontoString2.substring(searchResult2, (searchResult2+6))
+document.write('<br>' + 'Adım: ' + name + '<br> Soyadım: ' + surname)
+var adi=JSON.parse
+
+document.writeln('<br>'+"****************************")
+
+//3-Çözüm (dinamik-1)
+//JSON.stringfy()
+//JSON.parse()
+var dinamic=JSON.stringify(obje);
+var parse=JSON.parse(dinamic);
+
+var name=parse.adi;
+document.writeln('<br>'+name)
+
+var surname=parse.soyadi;
+document.writeln('<br>'+surname)
+
+document.writeln('<br>'+"****************************")
+//3-Çözüm (dinamik-2 clean codes)
+
+//monad
+document.writeln('<br>'+ JSON.parse(JSON.stringify(obje)).adi.toUpperCase()+" "+JSON.parse(JSON.stringify(obje)).soyadi);
 
 //////////////////////////////////////////////////////////////
 
