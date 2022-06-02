@@ -408,48 +408,103 @@ multi-line comment
 // document.writeln('<br>' + 'diğer satır')
 
 //////////////////////////////////////////////////////////////
-//conditional: 
-//if else 
-var number="4";
-if(number==4){
-  document.write('<br>' + "eşittir")
-}else{
-  document.write('<br>' + "değildir")
+//conditional:
+//if else
+// var number = '4'
+// if (number == 4) {
+//   document.write('<br>' + 'eşittir')
+// } else {
+//   document.write('<br>' + 'değildir')
+// }
+
+// //if else
+// if (number == 4) document.write('<br>' + 'eşittir')
+// else document.write('<br>' + 'değildir')
+
+// /////////
+// //ternary
+// var ternary = number == 4 ? 'eşittir' : 'değildir'
+// document.write('<br>' + ternary)
+
+// document.write('<br>' + '++++++++')
+// /////////
+// //if elseif else
+// var day = 'persembe'
+// if (day === 'pazartesi') {
+//   document.write('<br>' + '1-pazartesi')
+// } else if (day === 'sali') {
+//   document.write('<br>' + '2-sali')
+// } else if (day === 'carsamba') {
+//   document.write('<br>' + '3-carsamba')
+// } else if (day === 'persembe') {
+//   document.write('<br>' + '4-persembe')
+// } else if (day === 'cuma') {
+//   document.write('<br>' + '5-cuma')
+// } else if (day === 'cumartesi') {
+//   document.write('<br>' + '6-cumartesi')
+// } else if (day === 'pazar') {
+//   document.write('<br>' + '7-pazar')
+// } else {
+//   document.write('<br>' + 'gün yanlış çalışıldı')
+// }
+
+// ///////////////////////////////////////////////////////////////
+// //algoritma analizi
+// //switch -case
+// switch (day) {
+//   case 'pazartesi':
+//     document.write('<br>' + '1-pazartesi')
+//     break
+
+//   case 'sali':
+//     document.write('<br>' + '2-sali')
+//     break
+
+//   case 'carsamba':
+//     document.write('<br>' + '3-carsamba')
+//     break
+
+//   case 'persembe':
+//     document.write('<br>' + '4-persembe')
+//     break
+
+//   case 'cuma':
+//     document.write('<br>' + '5-cuma')
+//     break
+
+//   case 'cumartesi':
+//     document.write('<br>' + '6-cumartesi')
+//     break
+
+//   case 'pazar':
+//     document.write('<br>' + '7-pazar')
+//     break
+
+//   default:
+//     document.write('<br>' + 'gün yanlış çalışıldı')
+//     break
+// }
+
+///////////////////////////////////////////////////////////////
+//return break continue 
+//return   : birşey döndermek (function durdurmak)
+//break    : döngüyü kırmak
+//continue : sadece o şart için çalışma ama sonrasında devam et
+
+//////////////////////
+//Loop
+//iterative for
+//1 artımak 
+// i++
+// i=i+1
+// i+=1
+
+document.writeln("<br>"+ (1+2+3+4+5+6+7+8+9+10)+"<br>")
+
+var sum=0;
+for (var i = 1; i <=10000; i++) {
+  sum=sum+i;
 }
-
-//if else 
-if(number==4)
-  document.write('<br>' + "eşittir")
-else
-  document.write('<br>' + "değildir")
+document.writeln("<br>"+ sum+"<br>")
 
 
-/////////
-//ternary
-var ternary= (number==4) ?"eşittir":"değildir";
-document.write('<br>' + ternary);
-
-document.write('<br>' + "++++++++")
-/////////
-//if elseif else
-var day="persembe";
-if(day==="pazartesi"){
-  document.write('<br>' + "1-pazartesi");
-}else if(day==="sali"){
-  document.write('<br>' + "2-sali");
-}else if(day==="carsamba"){
-  document.write('<br>' + "3-carsamba");
-}else if(day==="persembe"){
-  document.write('<br>' + "4-persembe");
-}else if(day==="cuma"){
-  document.write('<br>' + "5-cuma");
-}else if(day==="cumartesi"){
-  document.write('<br>' + "6-cumartesi");
-}else if(day==="pazar"){
-  document.write('<br>' + "7-pazar");
-}else {
-  document.write('<br>' + "gün yanlış çalışıldı");
-}
-
-
-//switch -case
