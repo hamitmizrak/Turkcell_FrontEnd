@@ -528,6 +528,21 @@ do{
 
 document.writeln("<br>"+ sum3+"<br>")
 
+//ÖDEV
+//Örnek: 1 ile kullanıcının vereceği (prompt) bitiş sayısına göre
+//kullancı: 5 verdi diyelim 1<=X<=5
+//1.adım: kaç tane sayı var ?
+//2.adım: sayı toplamları var ?
+//3.adım: kaç tane tek  sayı var ?
+//4.adım: kaç tane çift  sayı var ?
+
+//Eğer verilen sayılarda 7 sayısı varsa bunu eklemesin (continue)
+//Eğer bitiş sayısı 100 fazla ise çalışmasın (break)
+//Eğer kullanıcı başlangıç sayıdan küçük girerse uyaralım başlangıçtan büyük girmesini isteyelim
+//Eğer kullanıcı secret-key girerse yani 44 sayısını girerse program çalışmadan dursun 
+
+
+
 
 
 
