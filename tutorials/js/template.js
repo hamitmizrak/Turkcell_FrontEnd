@@ -353,7 +353,7 @@ multi-line comment
 
 //////////////////////////////////////////////////////////////
 //Fonksiyon:
-
+//Normal Function
 //1-) returnsuz, parametresiz function
 function functionName1(){
   document.writeln('<br>'+"returnsuz, parametresiz function")
@@ -368,7 +368,24 @@ function functionName2(ekmekTuru){
 functionName2('Trabzon ekmeği')
 
 
-//Normal Function
+//3-) returnlu, parametrelisiz function
+function functionName3(){
+  return 'returnlu, parametresiz function 200-6 = 194TL'
+}
+var temp3= functionName3();
+document.writeln('<br>'+temp3)
+
+
+//4-) returnlu, parametreli function
+function functionName4(money){
+  var count=money-6;
+  return 'returnlu, parametreli function Kalan Para: '+count
+}
+var temp4= functionName4(200);
+document.writeln('<br>'+temp4)
+
+
+
 
 
 // var , let ,const
