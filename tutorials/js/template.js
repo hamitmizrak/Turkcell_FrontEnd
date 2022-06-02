@@ -501,10 +501,33 @@ multi-line comment
 
 document.writeln("<br>"+ (1+2+3+4+5+6+7+8+9+10)+"<br>")
 
+//for
 var sum=0;
-for (var i = 1; i <=10000; i++) {
+for (var i = 1; i <=10; i++) {
   sum=sum+i;
 }
 document.writeln("<br>"+ sum+"<br>")
+
+
+//while
+var sum2=0;
+var x = 1;
+while(x <=10){
+  sum2=sum2+x;
+  x++;
+}
+document.writeln("<br>"+ sum2+"<br>")
+
+//do-while: şart sağlansın yada sağlanması 1 kere çalışır.
+var sum3=0;
+var y = 1;
+do{
+  sum3=sum3+y;
+  y++;
+}while(y<=10);
+
+document.writeln("<br>"+ sum3+"<br>")
+
+
 
 
