@@ -643,15 +643,74 @@ multi-line comment
 // document.write('<br>'  +"AY (0): "+ tarih2.getMonth());
 
 
-function getDateHoursControl(){
-  //Zaman Uygulaması
-var hour=new Date().getHours();
-if(hour>=13){
-  document.write('<br>'  +"Öğlededen Sonra ");
-}else{
-  document.write('<br>'  +"Öğlededen Önce ");
-}
-}
-getDateHoursControl()
+// function getDateHoursControl(){
+//   //Zaman Uygulaması
+// var hour=new Date().getHours();
+// if(hour>=13){
+//   document.write('<br>'  +"Öğlededen Sonra ");
+// }else{
+//   document.write('<br>'  +"Öğlededen Önce ");
+// }
+// }
+// getDateHoursControl()
+
+//Ödev kullanıcı tarafında girilen şifre ve şifre doğrulama
+//validation password -repassword
+
+//////////////////////////////////////////////////////////////////
+//JavaScript  single Thread
+
+// function bodyFunction(){
+//   document.write('<br>'  +" 3 saniye sonra geldi ");
+// }
+// setTimeout(bodyFunction,3000);
+
+//+++++++++++++++++++++++
+// //1-) callback function 
+// function ikinci(value){
+//   document.write('<br>'  +" ikinci fonkisyon çalıştı "+value);
+// }
+
+// //2-) ana function
+// function birinci(number1,number2,callback){
+// var result=number1*number2;
+// callback(result)
+// }
+
+// birinci(4,6,ikinci)
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//2-) Immedia function : fonksiyonu çağırmadan gelsin
+//Öncesinde başka bir fonksiyon olmasın
+//immediate: dogrudan, dolaysiz, derhal
+//()()
+// (function deneme44 (){
+//   document.write('<br>'  +" deneme");
+// })();
 
 
+//////////////////////////////////////////////////////////////////
+//Dizi
+//var dizi=[] ile var dizi2=new Array();
+//diziler sıfırdan(0) başlar
+var array=[1,5,true,"merhabalar",55];  
+console.log(array)
+
+//iterative for
+for (let i = 0; i < array.length;  i++) {
+ document.write('<br>'  + array[i])
+}
+document.write('<br>' +"****************")
+
+//for-in (for over index)
+for (temp in array){
+  document.write('<br>'  + temp+" ==> "+array[temp])
+}
+
+document.write('<br>' +"****************")
+
+//for-of(for over members)
+//Direk ekranda göstermek istersek
+for (temp of array){
+  document.write('<br>'  + temp)
+}
