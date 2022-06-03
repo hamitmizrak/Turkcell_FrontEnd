@@ -719,6 +719,7 @@ multi-line comment
 
 // // Dizi fonksiyonlarına
 // //EKLEME
+//+++++++++++++
 // //push(): var olan dizimizin son elemanına veri eklemek
 // array.push(" son");
 
@@ -728,6 +729,7 @@ multi-line comment
 
 // document.write('<br>' +"****************")
 
+//+++++++++++++
 // //unshift(): var olan dizimizin son elemanına veri eklemek
 // array.unshift("önce");
 
@@ -736,6 +738,7 @@ multi-line comment
 // }
 
 //ÇIKARMA
+//+++++++++++++
 //pop: sondan bir eleman çıkarmak
 // var dizi=[1,5,true,"merhabalar",55]; 
 
@@ -744,11 +747,21 @@ multi-line comment
 //   document.write('<br>'  + temp)
 // }
 
+//+++++++++++++
 //shift: başlangıçtan bir eleman çıkarmak
-var dizi=[1,5,true,"merhabalar",55]; 
+// var dizi=[1,5,true,"merhabalar",55]; 
 
-dizi.shift();
+// dizi.shift();
 
-for (temp of dizi){
+// for (temp of dizi){
+//   document.write('<br>'  + temp)
+// }
+
+//+++++++++++++
+//sort(): sıralama yapar 
+var dizi=["malatya","istanbul","ankara","izmir","muş","bitlis","sivas"];  
+
+dizi.sort();
+for( var temp of dizi ){
   document.write('<br>'  + temp)
 }
