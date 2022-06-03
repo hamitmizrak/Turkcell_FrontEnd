@@ -737,9 +737,18 @@ multi-line comment
 
 //ÇIKARMA
 //pop: sondan bir eleman çıkarmak
+// var dizi=[1,5,true,"merhabalar",55]; 
+
+// dizi.pop()
+// for (temp of dizi){
+//   document.write('<br>'  + temp)
+// }
+
+//shift: başlangıçtan bir eleman çıkarmak
 var dizi=[1,5,true,"merhabalar",55]; 
 
-dizi.pop()
+dizi.shift();
+
 for (temp of dizi){
   document.write('<br>'  + temp)
 }
