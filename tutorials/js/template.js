@@ -696,21 +696,40 @@ multi-line comment
 var array=[1,5,true,"merhabalar",55];  
 console.log(array)
 
-//iterative for
-for (let i = 0; i < array.length;  i++) {
- document.write('<br>'  + array[i])
-}
-document.write('<br>' +"****************")
+// //iterative for
+// for (let i = 0; i < array.length;  i++) {
+//  document.write('<br>'  + array[i])
+// }
+// document.write('<br>' +"****************")
 
-//for-in (for over index)
-for (temp in array){
-  document.write('<br>'  + temp+" ==> "+array[temp])
-}
+// //for-in (for over index)
+// for (temp in array){
+//   document.write('<br>'  + temp+" ==> "+array[temp])
+// }
 
-document.write('<br>' +"****************")
+// document.write('<br>' +"****************")
 
 //for-of(for over members)
-//Direk ekranda göstermek istersek
+//Direk ekranda göstermek
+for (temp of array){
+  document.write('<br>'  + temp)
+}
+document.write('<br>' +"****************")
+
+// +++++++++++
+// Dizi fonksiyonlarına
+//push(): var olan dizimizin son elemanına veri eklemek
+array.push(" son");
+
+for (temp of array){
+  document.write('<br>'  + temp)
+}
+
+document.write('<br>' +"****************")
+
+//unshift(): var olan dizimizin son elemanına veri eklemek
+array.unshift("önce");
+
 for (temp of array){
   document.write('<br>'  + temp)
 }
