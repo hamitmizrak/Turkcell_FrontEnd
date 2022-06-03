@@ -80,10 +80,24 @@ Javascript single-thread çalıştırma yaptığı için çalıştırdığı eve
  Compiler- interpreter ?
  JavaScript Compiler mi ? interpreter mi ? (Burakcan)
 
+ •	Compiler(Derleyici): Geliştiricilerin herhangi bir programlama dilini kullanarak yazdığı kaynak kodu bilgisayarın anlayabileceği makine diline yani 0 ve 1’lere çeviren aracı yazılımdır.
+•	 Derleyici sayesinde geliştiriciler farklı programlama dillerini kullanarak aynı işlevi yerine getiren yazılımlar üretebilirler. Üstelik Compiler’ların varlığı, çok fazla programlama dilinin olmasına ve geliştiricilerin alternatif dillerle çalışmasına yardımcı olmaktadır.
+•	Interpreter(Yorumlayıcı): Yüksek se
+•	Interpreter(Yorumlayıcı): Yüksek seviyeli programlama dili ile yazılmış bir progamı adım adım makine diline çeviren ve makine dilindeki talimatları çalıştıran programdır.
+•	Interpreter bütün programın çalıştırılabilir bir kodunu üretmek yerine, programın adımlarını tek tek makine diline çevirir ve hemen çalıştırır. Program tekrar çalıştırılmak istenirse interpreter kaynak kod üzerinde yine aynı yolu izler.
+•	JavaScript Interpreter(Yorumlayıcı) bir dildir.  JavaScript’in compiler adımı yoktur. Bunun yerine, tarayıcıdaki bir interpreter(yorumlayıcı) JavaScript kodunu okur, her satırı yorumlar ve çalıştırır. Daha modern tarayıcılar, JavaScript’i tam çalışmak üzereyken yürütülebilir bayt koduna derleyen Just-In-Time(JIT) derlemesi olarak bilinen teknoloji kullanır.
+•	Just-In-time(JIT):Just-In-Time veya JIT, derleme, JavaScript, C# ve Java gibi diller için çalışma zamanı yorumlayıcıları tarafından, C++
+gibi önceden derlenmiş ikili diller tarafından sunulan yerel performansa yaklaşık yürütme hızları sağlamak için kullanılan bir tekniktir.
+
  ###############################################################################################################
  for ile while arasındaki fark  ? (Tuğba)
 
-
+For: Önceden ayarlanmış sayıda yinelenir.
+Yalnızca yineleme sayısı bilindiğinde sonucu elde etmek için kullanılır.
+Koşul 'for' döngüsüne yerleştirilmezse, döngü sonsuz kez yinelenir.
+While: Bir koşul sağlanana kadar yinelenir.
+Yineleme sayısı bilinmediğinde koşulu sağlamak için kullanılır. Koşulu True veya False değerine göre değerlendirmek için ifade belirtilir. 
+Koşul 'while' döngüsüne yerleştirilmezse derleme hatası verir.
 
 ###############################################################################################################
 Compiler - Syntax - Runtime Error  (Doğuş)
