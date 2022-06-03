@@ -1,34 +1,91 @@
 
 HTML
-#####Araştırma Ödevleri#################################################
+#####Araştırma Ödevleri########################################################################################
 xhtml ile Html5 arasındaki farklar
 semantin non-semanatic
 table colspan rowspan nedir örneği
 
-#####Proje##############################################################
+#####Proje#####################################################################################################
 register
 todo list
 
-########################################################################
+###############################################################################################################
 Stack Memory - Heap Memory nedir? aralarındaki Fark  (Furkan)
+Stack = Primitive (int)     , Hafıza uzayı belli
+Heap  = Wrapper   (Integer) , Hafıza uzayı belli değilse (collection)
+
+Stack ve Heap bellekte (RAM’de) bulunan mantıksal yapılardır . Değer tip (value type) dediğimiz int, short, byte, long, decimal, double, float gibi tipler stackte tutulur. Stackte veriler üst üste (LIFO– Last in First out) mantığında dizilir ve sırası gelmeden aradaki bir değer ile işlem yapılamaz. Class type (Sınıf tipi) değişkenler referans tiplerdir referans ettikleri model (referans) stackte değerleri ise heapde saklanır.
+int a=5
+int b=a
+// a ve b 5'e esit
+int a=2
+// a=2 b=5
 
 
-########################################################################
-Git CVCS -DVCS nedir aralarındaki farklar nelerdir ?  (Mustafa)
+###############################################################################################################
+Git CVCS - DVCS nedir aralarındaki farklar nelerdir ?  (Mustafa)
+Versiyon Kontrol Sistemi (VCS): revizyon kontrol veya kaynak kontrol
+diye de geçip, değişiklik yönetim sistemi anlamına gelmektedir.  
+Bir ya da daha fazla dosya üzerinde yapılan değişiklikleri
+kaydeden ve daha sonra belirli bir sürüme geri dönebilmenizi sağlayan bir sistemdir.
+versiyon kontrol sistemi, dosyaların ya da bütün projenin geçmişteki belirli bir sürümüne erişmenizi, 
+zaman içinde yapılan değişiklikleri karşılaştırmanızı, soruna neden olan şeyde en son kimin değişiklik yaptığını, 
+belirli bir hatayı kimin, ne zaman sisteme dahil ettiğini ve
+başka pek çok şeyi görebilmenizi sağlar. Öte yandan, bir hata yaptığınızda ya da bazı dosyaları yanlışlıkla
+sildiğinizde durumu kolayca telâfi etmenize yardımcı olur. 
+
+AMAÇLARINI SÖYLEYİM:
+1)Geliştiricilerin, kod değişikliklerini takip etmelerini sağlar.
+2)Geliştiricilerin, kod değişiklik geçmişini görmelerini sağlar.
+3)Geliştiricilerin, aynı kod dosyalarında aynı anda çalışmasına izin verir.
+4)Geliştiricilerin, kodlarını dallanma yoluyla ayırmalarına izin verir.
+5)Farklı dallardan yani branch'lerden kodları birleştirir.
+6)Geliştiricilerin, çakışmalarını gösterir ve bunları çözmelerine izin verir.
+7)Geliştiricilerin, değişikliklerini önceki bir duruma döndürmelerine izin verir.
+Dağıtık Sürüm Kontrol Sistemleri:kullanıcılar dosyaların yalnızca en son bellek kopyalarını almakla kalmaz, 
+yazılım havuzunu (repository) bütünüyle kopyalarlar. Git, Mercurial, Bazaar ve Darcs gibi örnekleri dağıtık sistemlere örnektir.
+Dağıtık sistemlerde üzerinde ortak çalışma yütürülen sunuculardan biri çökerse istemcilerden birinin yazılım havuzu 
+sunucuya geri yüklenerek sistem kurtarılabilmektedir. Her seçip alma (check out) işlemi esasında bütün verinin yedeklenmesiyle sonuçlanır.
+Dağıtık sistemlerin (DVCS) merkezi sistemlere (CVCS) kıyasla sundukları avantajları ve dezavantajları şu şekilde listeleyebiliriz11.
+
+Network bağlantısı olmasada kullanıcılar ilgili repo üzerinde çalışabilirler,
+dağıtık sistemler ortak işlemleri daha hızlı işler, çünkü merkezi bir sunucuyla iletişim kurmaya gerek yoktur. 
+ dağıtık sistemler bu iletişime değişikliklerin diğer ortaklarla paylaşılacağı zaman ihtiyaç duyar.
+Özel çalışma alanları oluşturmak mümkündür.
+mustafa çelik09:15
+ Böylece, kullanıcılar paylaşmak istemedikleri taslaklardaki değişiklikleri de kullanabilirler.
+Üzerinde çalışılan kopyalar aynı zamanda uzak yedek (remote backup) görevi görürler. 
+Bu sayede herhangi bir donanım hatasından (kırılma noktası gibi) etkilenmezler.
+Farklı geliştirme modelleri (development branches, commander/kieutenant model gibi) kullanılanibilir.
+Projenin release version’unun kontrolü merkezi olarak gerçekleştirilebilir.
+FOSS (Free and Open-source Software / Özgür ve Açık Kaynaklı Yazılım) yazılım projelerinde, 
+liderlik çatışmaları veya tasarımdaki anlaşmazlıklar nedeniyle durdurulmuş bir proje kolaylıkla çatallanarak (fork) sürdürülebilir.
 
 
-########################################################################
+###############################################################################################################
  Senkron nedir ? Asenkron nedir ? aralarındaki fark ? JavaScript senkron mu ? asenkron ?   (Barış)
 
- ########################################################################
- Compiler- interpreter ?
-JavaScript Compiler mi ? interpreter mi ? (Burakcan)
+Java       ==> MultiThread 
+C#         ==> MultiThread 
+JavaScript ==> SingleThread (setTimeout(), callBack,promise,Asgnawait)
 
- ########################################################################
+Senkronun kelime anlamı eş zamanlı olmasına rağmen programlama dilinde her bir işin sıra ile yapılmasına denir. Yani bir process bitmeden diğerine geçilmemesi. Programlama dillerinin genelinde yazdığımız kodlar yukarıdan aşağıya okunarak çalıştırılır. Yani senkron olarak çalışır.
+Asenkron Programla: Kelime anlamı başlama ve bitiş zamanları ayrı olan, aynı zamanda olmayan demek olan kelimedir. Diğer adı da eşzamanızdır. 
+Senkron programlama ise programın senkron bir şekilde değil de öncelik verdiğimiz işlemlerin daha önce yapılmasını sağlayan ya da sağladığımız programlamadır. 
+Senkron programlamada kodların yukarıdan aşağıya çalışmasını her zaman istemeyebiliriz. Mesela bir fonksiyonu son sırada yazarız ama ilk olarak o fonksiyonun çalışmasını isteyebiliriz. Burada Asenkron programlama devreye giriyor.
+Javascript single-thread çalıştırma yaptığı için çalıştırdığı eventleri ve callback leri sıraya sokarak hepsini tek bir thread ile işler. Bahsedilen Event’lerin ve Callback’lerin sırada tutulduğu yapı, basit bir kuyruk (Queue) mekanizmasıdır. Thread’in her defasında kuyruktaki ilk Event’i işleyip yeni bir Event alması da Event Loop olarak adlandırılır. Javascript Run-to-Completion adı verilen, elindeki işi tamamlamadan başka bir işe geçmeyen bir mekanizmaya sahiptir.
+
+
+ ###############################################################################################################
+ Compiler- interpreter ?
+ JavaScript Compiler mi ? interpreter mi ? (Burakcan)
+
+ ###############################################################################################################
  for ile while arasındaki fark  ? (Tuğba)
 
 
-########################################################################
+
+###############################################################################################################
 Compiler - Syntax - Runtime Error  (Doğuş)
 Runtime error : Çalışma zamanı hatası, bir programın düzgün çalışmasını engelleyen bir yazılım veya donanım sorunudur. Çalışma zamanı hataları, çalışmakta olduğunuz dosyadaki bilgileri kaybetmenize, dosyayla çalışmanızı engelleyen hataların oluşmasına (dosyanın bozulmasına) veya bir özelliği kullanmanızın engellenmesine yol açabilir. Çalışma zamanı hataları, uyumlu olmayan iki yazılım programı çalıştırıyorsanız, bilgisayarınızda bellek sorunları varsa veya bilgisayarınıza kötü amaçlı yazılımlar 
 
@@ -40,7 +97,8 @@ Compile error : Compile hatası, syntax hatasından farklı olarak, kodu çalı�
 
 
 CSS 
-########################################################################
+ ###############################################################################################################
+ ###############################################################################################################
 ASCII UNICODE  (Ali Furkan)
 ASCII Kodu Nedir?
 ASCII (American Standard Code for Information Interchange), bizim bilgisayarda görsel olarak girdiğimiz karakter,harf ve rakamların bilgisayar dilindeki temsil edilme şeklidir diyebiliriz.Yani bilgisayarımızın o karakteri,harfi veya rakamı belleğinde saklama biçimidir.
