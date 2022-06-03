@@ -758,10 +758,18 @@ multi-line comment
 // }
 
 //+++++++++++++
-//sort(): sıralama yapar 
-var dizi=["malatya","istanbul","ankara","izmir","muş","bitlis","sivas"];  
+// //sort(): küçükten büyüğe doğru sıralama yapar 
+// var dizi=["malatya","istanbul","ankara"];  
 
-dizi.sort();
-for( var temp of dizi ){
+// dizi.sort();
+// for( var temp of dizi ){
+//   document.write('<br>'  + temp)
+// }
+
+//reverse(): büyükten küçüğe  doğru sıralama yapar 
+var dizi=["malatya","istanbul","ankara"];  
+
+var newDizi = dizi.reverse();
+for( var temp of newDizi ){
   document.write('<br>'  + temp)
 }
