@@ -693,8 +693,8 @@ multi-line comment
 //Dizi
 //var dizi=[] ile var dizi2=new Array();
 //diziler sıfırdan(0) başlar
-var array=[1,5,true,"merhabalar",55];  
-console.log(array)
+// var array=[1,5,true,"merhabalar",55];  
+// console.log(array)
 
 // //iterative for
 // for (let i = 0; i < array.length;  i++) {
@@ -711,25 +711,35 @@ console.log(array)
 
 //for-of(for over members)
 //Direk ekranda göstermek
-for (temp of array){
-  document.write('<br>'  + temp)
-}
-document.write('<br>' +"****************")
+// for (temp of array){
+//   document.write('<br>'  + temp)
+// }
+// document.write('<br>' +"****************")
 
-// +++++++++++
-// Dizi fonksiyonlarına
-//push(): var olan dizimizin son elemanına veri eklemek
-array.push(" son");
 
-for (temp of array){
-  document.write('<br>'  + temp)
-}
+// // Dizi fonksiyonlarına
+// //EKLEME
+// //push(): var olan dizimizin son elemanına veri eklemek
+// array.push(" son");
 
-document.write('<br>' +"****************")
+// for (temp of array){
+//   document.write('<br>'  + temp)
+// }
 
-//unshift(): var olan dizimizin son elemanına veri eklemek
-array.unshift("önce");
+// document.write('<br>' +"****************")
 
-for (temp of array){
+// //unshift(): var olan dizimizin son elemanına veri eklemek
+// array.unshift("önce");
+
+// for (temp of array){
+//   document.write('<br>'  + temp)
+// }
+
+//ÇIKARMA
+//pop: sondan bir eleman çıkarmak
+var dizi=[1,5,true,"merhabalar",55]; 
+
+dizi.pop()
+for (temp of dizi){
   document.write('<br>'  + temp)
 }
