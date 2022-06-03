@@ -84,6 +84,26 @@ header{
 
 }
 
+
+/* ############################################################################################## */
+#back_top{
+    position:fixed;
+    right:0;
+    bottom:0;
+    color:#fff;
+    background-color:#0d6efd ;
+    border-color: #0d6efd;
+    margin-right: .8%;
+    padding: .3rem 1.5rem;
+    border-radius: .6rem;
+}
+
+#back_top:hover{
+    box-shadow: 1px 1px 5px 1px rgba(0,0,0,.6);
+    transition: 2s all;
+    border-radius: .8rem;
+}
+
 /* ############################################################################################## */
 
 /* main */
