@@ -449,8 +449,8 @@ multi-line comment
 // }
 
 // ///////////////////////////////////////////////////////////////
-// //algoritma analizi
-// //switch -case
+//algoritma analizi
+//switch -case
 // switch (day) {
 //   case 'pazartesi':
 //     document.write('<br>' + '1-pazartesi')
@@ -486,7 +486,7 @@ multi-line comment
 // }
 
 ///////////////////////////////////////////////////////////////
-//return break continue 
+//return break continue
 //return   : birşey döndermek (function durdurmak)
 //break    : döngüyü kırmak
 //continue : sadece o şart için çalışma ama sonrasında devam et
@@ -494,55 +494,59 @@ multi-line comment
 //////////////////////
 //Loop
 //iterative for
-//1 artımak 
+//1 artımak
 // i++
 // i=i+1
 // i+=1
 
-document.writeln("<br>"+ (1+2+3+4+5+6+7+8+9+10)+"<br>")
+// document.writeln("<br>"+ (1+2+3+4+5+6+7+8+9+10)+"<br>")
 
-//for
-var sum=0;
-for (var i = 1; i <=10; i++) {
-  sum=sum+i;
-}
-document.writeln("<br>"+ sum+"<br>")
-
+// //for
+// var sum = 0
+// for (var i = 1; i <= 10; i++) {
+//   sum = sum + i
+// }
+// document.writeln('<br>' + sum + '<br>')
 
 //while
-var sum2=0;
-var x = 1;
-while(x <=10){
-  sum2=sum2+x;
-  x++;
-}
-document.writeln("<br>"+ sum2+"<br>")
+// var sum2 = 0
+// var x = 1
+// while (x <= 10) {
+//   sum2 = sum2 + x
+//   x++
+// }
+// document.writeln('<br>' + sum2 + '<br>')
 
 //do-while: şart sağlansın yada sağlanması 1 kere çalışır.
-var sum3=0;
-var y = 1;
-do{
-  sum3=sum3+y;
-  y++;
-}while(y<=10);
+// var sum3 = 0
+// var y = 1
+// do {
+//   sum3 = sum3 + y
+//   y++
+// } while (y <= 10)
 
-document.writeln("<br>"+ sum3+"<br>")
+// document.writeln('<br>' + sum3 + '<br>')
 
-//ÖDEV
+//ÖDEV (if-else for break continue)
+//Fonksiyonlarla
 //Örnek: 1 ile kullanıcının vereceği (prompt) bitiş sayısına göre
 //kullancı: 5 verdi diyelim 1<=X<=5
 //1.adım: kaç tane sayı var ?
 //2.adım: sayı toplamları var ?
+
 //3.adım: kaç tane tek  sayı var ?
-//4.adım: kaç tane çift  sayı var ?
+//4.adım: tek sayılar toplamı ?
+//5.adım: tek sayılar gösterelim ?
+
+//6.adım: kaç tane çift  sayı var ?
+//7.adım: çift sayılar toplamı ?
+//8.adım: çift sayılar gösterelim ?
 
 //Eğer verilen sayılarda 7 sayısı varsa bunu eklemesin (continue)
-//Eğer bitiş sayısı 100 fazla ise çalışmasın (break)
+//Eğer bitiş sayısı 100 fazla ise 100'e kadar olanlar toplansın  (break)
 //Eğer kullanıcı başlangıç sayıdan küçük girerse uyaralım başlangıçtan büyük girmesini isteyelim
-//Eğer kullanıcı secret-key girerse yani 44 sayısını girerse program çalışmadan dursun 
+//Eğer kullanıcı secret-key girerse yani 44 sayısını girerse program çalışmayı direk durdursun
 
 
-
-
-
-
+//////////////////////////////////////////////////////
+/// Debug nasıl atılır ?
