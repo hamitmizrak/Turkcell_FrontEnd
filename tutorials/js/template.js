@@ -557,7 +557,7 @@ function userData() {
 
 //main function
 function main() {
-  var number = userData();
+  var number =8 //userData();
   //document.write("<br>"+number);
   var sum = 0,
     counter = 0 //toplam ve sayı adedi
@@ -623,3 +623,6 @@ main()
 
 //////////////////////////////////////////////////////
 /// Debug nasıl atılır ?
+// http://127.0.0.1:5501/tutorials/js/javascript.html
+//.vscode ==> launch.json
+//////////////////////////////////////////////////////
