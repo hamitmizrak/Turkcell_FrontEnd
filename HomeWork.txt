@@ -8,6 +8,33 @@ table colspan rowspan nedir örneği
 #####JS#####################################################################################################
 callbackfunction (Mehmet)
 
+
+
+
+#####JS new array #############################################################
+//Alttaki gibi dizi tanımlaması yapılır ise dizinin ilk elemanı verilmiş olur.
+var dizi2 = [2];
+dizi2.push(3);
+for (var d2 of dizi2) {
+    document.write(d2 + "<br/>");
+}
+document.write("Dizi2 boyutu: " + dizi2.length);
+
+document.write("<br/><br/>***********************<br/><br/>");
+//muCars1 ve myCars2 dizileri aynıdır.
+var myCars1 = new Array(2,"Volvo","BMW");
+var myCars2 = [2,"Volvo","BMW"];
+
+for (var m1 of myCars1) {
+    document.write(m1 + "<br/>");
+}
+document.write("myCars1 boyutu: " + myCars1.length + "<br/>");
+document.write("<br/><br/>***********************<br/><br/>");
+for (var m2 of myCars2) {
+    document.write(m2 + "<br/>");
+}
+document.write("myCars2 boyutu: " + myCars2.length + "<br/>");
+
 ###############################################################################################################
 Stack Memory - Heap Memory nedir? aralarındaki Fark  (Furkan)
 Stack = Primitive (int)     , Hafıza uzayı belli

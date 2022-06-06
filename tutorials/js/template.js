@@ -770,6 +770,7 @@ multi-line comment
 var dizi=["malatya","istanbul","ankara"];  
 
 var newDizi = dizi.reverse();
+
 for( var temp of newDizi ){
   document.write('<br>'  + temp)
 }
