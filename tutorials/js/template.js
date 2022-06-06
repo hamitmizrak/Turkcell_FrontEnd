@@ -895,7 +895,7 @@ console.log(dizi.slice(3));
 //istediğimiz dizi aralığını vererek dizi döndürmek
 console.log(dizi.slice(0,2)); //0<=X<=(2-1)
 }
-arrayIndexClone()
+//arrayIndexClone()
 
 console.log("**************************")
 
@@ -929,8 +929,98 @@ function arrayBlockAdd(){
   console.log(dizi.splice(2, 0, "Lemon", "Kiwi"));
   console.log(dizi)
   }
-  arrayBlockAdd()
+  //arrayBlockAdd()
 
+  //Hoisting: önce değerei daha sonra türünü
+  deneme=44;
+  var deneme;
+ //document.write("<br>"+deneme)
+
+  ////////////////////////////////////////////////////////////
+  //Object: özellikleri
+  //this: unutma
+  //anonymous function
+
+//   var obj2=new Object()
+//  console.log(obj2)
+
+var person={
+  "adı":"Hamit",
+  "soyadı":"Mızrak",
+  "deneyim":9,
+  "isLogin":true,
+  "teknolojiler":["html5","css3","js","bootstrap"],
+  "adiSoyadi":function(){
+    return this.adı.toUpperCase()
+  },
+
+  "java":{
+    "adı":"JavaSE",
+    "db":"H2DB"
+  }
+}; 
+//console.log(person)
+
+//objeye sonradan veri eklemek için kullanıyoruz
+// person.eklenen="Eklenen veri";
+// console.log(person.eklenen)
+
+
+//Literal Template
+function esLiteralTemplateMultiLine(){
+var valueTem1="Merhabalar <br> nasılsınız <br> yeni teknolojiler öğreniyorum";
+document.writeln("<br>"+valueTem1)
+console.log(valueTem1+"\ndiğer kelime")
+
+//1-MultiLine
+var valueTem2=`Merhabalar
+nasılsınız`;
+console.log(valueTem2)
+}
+//esLiteralTemplateMultiLine()
+
+// 2-) Interpolation `${}`
+function esLiteralInterpolation(){
+  var adi44="Hamit";
+  var soyadi44="Mızrak";
+
+  var valueInter1=adi44+"\n"+soyadi44;
+  console.log(valueInter1)
+
+  var valueInter2=`adım:${adi44} soyadım:${soyadi44}`;
+  console.log(valueInter2)
+
+  }
+//esLiteralInterpolation()
+
+// 3-) Html Template
+function normalHtmlTemplate(){
+  var country="Turkey";
+  var html=
+  "<ul>"+
+      "<li>"+
+          country+
+      "</li>"+
+      "<li>"+
+          country.toUpperCase()+
+      "</li>"+
+  "</ul>";
+  document.body.innerHTML=html;
+}
+//normalHtmlTemplate()
+
+function esTemplateHtmlTemplate(){
+  var country="Turkey";
+var html=
+`
+<ul>
+    <li>${country}</li>
+    <li>${country}</li>
+</ul>
+`;
+document.body.innerHTML=html;
+}
+esTemplateHtmlTemplate()
 
 
 
