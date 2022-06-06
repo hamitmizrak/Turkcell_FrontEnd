@@ -691,11 +691,15 @@ multi-line comment
 
 //////////////////////////////////////////////////////////////////
 //Dizi
-//var dizi=[] ile var dizi2=new Array();
-//diziler sıfırdan(0) başlar
+// 1.gösterim ==> var dizi=[]  
+// 2.gösterim ==> var dizi2 = new Array();
+
+// diziler sıfırdan(0) indis başlar
+// dizi.length-1 ==> son elemana erişmek
 // var array=[1,5,true,"merhabalar",55];  
 // console.log(array)
 
+//++++++++++++++++++++++++
 // //iterative for
 // for (let i = 0; i < array.length;  i++) {
 //  document.write('<br>'  + array[i])
@@ -711,12 +715,12 @@ multi-line comment
 
 //for-of(for over members)
 //Direk ekranda göstermek
-// for (temp of array){
+// for (var temp of array){
 //   document.write('<br>'  + temp)
 // }
 // document.write('<br>' +"****************")
 
-
+//++++++++++++++++++++++++
 // // Dizi fonksiyonlarına
 // //EKLEME
 //+++++++++++++
@@ -758,19 +762,54 @@ multi-line comment
 // }
 
 //+++++++++++++
-// //sort(): küçükten büyüğe doğru sıralama yapar 
-// var dizi=["malatya","istanbul","ankara"];  
 
+// sort(): küçükten büyüğe doğru sıralama yapar 
+// var dizi=["malatya","istanbul","ankara"];  
 // dizi.sort();
+// for( var temp of dizi ){
+//    document.write('<br>'  + temp)
+//  }
+
+//reverse(): ters sıralama 
+//var dizi=["istanbul","malatya","ankara"];  
+//reverse() ==> Diziyi tersten yazdırır
+//dizi.reverse(); 
+//büyükten küçüğe ==>
+//sort().reverse() ==> Diziyi önce küçükten büyüğe sonra reverse
+//  dizi.sort().reverse() 
 // for( var temp of dizi ){
 //   document.write('<br>'  + temp)
 // }
 
-//reverse(): büyükten küçüğe  doğru sıralama yapar 
-var dizi=["malatya","istanbul","ankara"];  
+// diziyi String nasıl çevirelim
+//+++++++ dizi konuları 
+function arrayValue(){
+var dizi=["java","spring","hibernate","spring"];
+document.write("<br>"+dizi[1]+dizi[2])
 
-var newDizi = dizi.reverse();
 
-for( var temp of newDizi ){
-  document.write('<br>'  + temp)
+//dizinin ilk elemanına erişmek
+document.write("<br>"+"dizi ilk elemanı =>"+dizi[0])
+
+//dizinin son elemanına erişmek
+document.write("<br>"+"dizi son elemanı =>"+dizi[dizi.length-1])
+
+var diziEleman=dizi[0];//string 
+document.write("<br>"+ typeof diziEleman)
+
 }
+//arrayValue()
+
+
+//+++++++ dizi string'e çevir  ==> dizi.toString()
+// string ,concat()==> concat sadece kelimenin en sonuna ekler
+function arrayToString(){
+  var dizi2=["java","spring","hibernate","MVC","Data"];
+ 
+  document.write("<br>"+ dizi2.toString());
+  console.log(dizi2.toString().toUpperCase().concat(" 1 kere ekle"));
+}
+
+arrayToString()
+
+
