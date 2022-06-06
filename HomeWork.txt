@@ -35,6 +35,13 @@ for (var m2 of myCars2) {
 }
 document.write("myCars2 boyutu: " + myCars2.length + "<br/>");
 
+
+
+#####JS  toString() ile join()  nelerdir ?#############################################################
+Burakcan ==>
+
+
+
 ###############################################################################################################
 Stack Memory - Heap Memory nedir? aralarındaki Fark  (Furkan)
 Stack = Primitive (int)     , Hafıza uzayı belli

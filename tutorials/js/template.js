@@ -634,14 +634,12 @@ multi-line comment
 // document.write('<br>'  +"AY (0): "+ tarih.getMonth());
 // document.write('<br>'  +"<br>");
 
-
 // //Date set()
 // var tarih2=new Date("2015-1-1");
 // document.write('<br>'  +"Gün: "+ tarih2.getDate());
 // document.write('<br>'  +"Yıl: "+ tarih2.getFullYear());
 // document.write('<br>'  +"Dakika: "+ tarih2.getMinutes());
 // document.write('<br>'  +"AY (0): "+ tarih2.getMonth());
-
 
 // function getDateHoursControl(){
 //   //Zaman Uygulaması
@@ -666,7 +664,7 @@ multi-line comment
 // setTimeout(bodyFunction,3000);
 
 //+++++++++++++++++++++++
-// //1-) callback function 
+// //1-) callback function
 // function ikinci(value){
 //   document.write('<br>'  +" ikinci fonkisyon çalıştı "+value);
 // }
@@ -688,15 +686,29 @@ multi-line comment
 //   document.write('<br>'  +" deneme");
 // })();
 
-
 //////////////////////////////////////////////////////////////////
-//Dizi
-// 1.gösterim ==> var dizi=[]  
+//Dizi Fonksiyon
+// push()  ==> dizide sona 1 eleman ekleme
+// unshift()   ==> dizide başa 1 eleman ekleme
+// pop()   ==> dizide sona 1 eleman çıkarma
+// shift()  ==> dizide baştan 1 eleman çıkarma
+
+// sort()  ==> Küçükten büyüğe sıralama
+// reverse() ==> dizide ters yazdırır
+// sort()reverse() ==> büyükten küçüğe
+
+// toString() ==> diziyi String'e çevirir
+// join()   ==> dizide  her bir elemena ekleme yapar
+// concat() ==> String'te en sona ekleme yapar
+// split()  ==> String verileri diziye çevirir
+
+// 1.gösterim ==> var dizi=[]  ==> tavsiye edilen
 // 2.gösterim ==> var dizi2 = new Array();
+// new Array()  ==> eleman sayısını vermek ve NOT: dolmayan dizi elemanlarında undefined gelecektir
 
 // diziler sıfırdan(0) indis başlar
 // dizi.length-1 ==> son elemana erişmek
-// var array=[1,5,true,"merhabalar",55];  
+// var array=[1,5,true,"merhabalar",55];
 // console.log(array)
 
 //++++++++++++++++++++++++
@@ -744,7 +756,7 @@ multi-line comment
 //ÇIKARMA
 //+++++++++++++
 //pop: sondan bir eleman çıkarmak
-// var dizi=[1,5,true,"merhabalar",55]; 
+// var dizi=[1,5,true,"merhabalar",55];
 
 // dizi.pop()
 // for (temp of dizi){
@@ -753,7 +765,7 @@ multi-line comment
 
 //+++++++++++++
 //shift: başlangıçtan bir eleman çıkarmak
-// var dizi=[1,5,true,"merhabalar",55]; 
+// var dizi=[1,5,true,"merhabalar",55];
 
 // dizi.shift();
 
@@ -763,53 +775,99 @@ multi-line comment
 
 //+++++++++++++
 
-// sort(): küçükten büyüğe doğru sıralama yapar 
-// var dizi=["malatya","istanbul","ankara"];  
+// sort(): küçükten büyüğe doğru sıralama yapar
+// var dizi=["malatya","istanbul","ankara"];
 // dizi.sort();
 // for( var temp of dizi ){
 //    document.write('<br>'  + temp)
 //  }
 
-//reverse(): ters sıralama 
-//var dizi=["istanbul","malatya","ankara"];  
+//reverse(): ters sıralama
+//var dizi=["istanbul","malatya","ankara"];
 //reverse() ==> Diziyi tersten yazdırır
-//dizi.reverse(); 
+//dizi.reverse();
 //büyükten küçüğe ==>
 //sort().reverse() ==> Diziyi önce küçükten büyüğe sonra reverse
-//  dizi.sort().reverse() 
+//  dizi.sort().reverse()
 // for( var temp of dizi ){
 //   document.write('<br>'  + temp)
 // }
 
 // diziyi String nasıl çevirelim
-//+++++++ dizi konuları 
-function arrayValue(){
-var dizi=["java","spring","hibernate","spring"];
-document.write("<br>"+dizi[1]+dizi[2])
+//+++++++ dizi konuları
+function arrayValue() {
+  var dizi = ['java', 'spring', 'hibernate', 'spring']
+  document.write('<br>' + dizi[1] + dizi[2])
 
+  //dizinin ilk elemanına erişmek
+  document.write('<br>' + 'dizi ilk elemanı =>' + dizi[0])
 
-//dizinin ilk elemanına erişmek
-document.write("<br>"+"dizi ilk elemanı =>"+dizi[0])
+  //dizinin son elemanına erişmek
+  document.write('<br>' + 'dizi son elemanı =>' + dizi[dizi.length - 1])
 
-//dizinin son elemanına erişmek
-document.write("<br>"+"dizi son elemanı =>"+dizi[dizi.length-1])
-
-var diziEleman=dizi[0];//string 
-document.write("<br>"+ typeof diziEleman)
-
+  var diziEleman = dizi[0] //string
+  document.write('<br>' + typeof diziEleman)
 }
 //arrayValue()
 
-
 //+++++++ dizi string'e çevir  ==> dizi.toString()
 // string ,concat()==> concat sadece kelimenin en sonuna ekler
-function arrayToString(){
-  var dizi2=["java","spring","hibernate","MVC","Data"];
- 
-  document.write("<br>"+ dizi2.toString());
-  console.log(dizi2.toString().toUpperCase().concat(" 1 kere ekle"));
+//arrayToString()
+function arrayToString() {
+  var dizi2 = ['java', 'spring', 'hibernate', 'MVC', 'Data']
+
+  document.write('<br>' + dizi2.toString())
+  console.log(dizi2.toString().toUpperCase().concat(' 1 kere ekle'))
 }
 
-arrayToString()
 
+//join() => her bir elemana erişim sağlamak
+//join() => string verilere çevirmek
+function arrayJoin(){
+  var dizi3 = ['java', 'spring', 'hibernate', 'MVC', 'Data'];
+  document.write("<br/>"+dizi3.join()) //virgüllü 
+  document.write("<br/>"+dizi3.join(' ')) //boşlukla göstersin
+  document.write("<br/>"+dizi3.join('-')) //- göstersin
 
+  var value=dizi3.join();
+  document.write("<br>"+typeof value)
+
+  var value2=dizi3.join().startsWith('j');
+  document.write("<br>"+value2)
+}
+
+//arrayJoin()
+
+//toString()
+//join()
+//concat()
+
+//split: bir string verisindeki bütün elemanları bir diziye atar
+function arraySplit(){
+  var dizi4 = "java, spring, +hibernate, MVC, Data";
+  console.log(dizi4)
+
+  var dizi5=[];
+  console.log(dizi4.split(" ")) //regex
+
+  dizi5=dizi4.split("+"); //+ işaretine göre parçalama
+  console.log(dizi5)
+
+ for (let i = 0; i < dizi5.length; i++) {
+   console.log(dizi5[i]);
+ }
+
+}
+
+//arraySplit()
+
+// bilgisayar tarafında rastgele oluşturmuş kullanıcı tarafından bitiş sayısına göre sayılar oluşturulsun
+// bu sayıları bir diziye atama yapalım
+// bu sayılardan ilk eleman
+// bu sayılardan son eleman
+// bu sayıların küçükten büyüğe sıralama
+// bu sayıların büyükten küçüğe sıralama
+// bu sayıların toplamları 
+// bu sayıların çift sayı toplamları 
+// bu sayıların tek sayı toplamları 
+// bu sayıların her birine 1 ekleyerek yeni bir dizi oluşturalım
