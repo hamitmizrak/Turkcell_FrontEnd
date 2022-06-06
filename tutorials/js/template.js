@@ -688,19 +688,20 @@ multi-line comment
 
 //////////////////////////////////////////////////////////////////
 //Dizi Fonksiyon
-// push()  ==> dizide sona 1 eleman ekleme
+// push()      ==> dizide sona 1 eleman ekleme
 // unshift()   ==> dizide başa 1 eleman ekleme
-// pop()   ==> dizide sona 1 eleman çıkarma
-// shift()  ==> dizide baştan 1 eleman çıkarma
+// pop()       ==> dizide sona 1 eleman çıkarma
+// shift()     ==> dizide baştan 1 eleman çıkarma
 
-// sort()  ==> Küçükten büyüğe sıralama
-// reverse() ==> dizide ters yazdırır
-// sort()reverse() ==> büyükten küçüğe
+// sort()           ==> Küçükten büyüğe sıralama
+// reverse()        ==> dizide ters yazdırır
+// sort().reverse() ==> büyükten küçüğe
 
 // toString() ==> diziyi String'e çevirir
-// join()   ==> dizide  her bir elemena ekleme yapar
-// concat() ==> String'te en sona ekleme yapar
-// split()  ==> String verileri diziye çevirir
+// join()     ==> dizide  her bir elemena ekleme yapar
+// concat()   ==> String'te en sona ekleme yapar
+// split()    ==> String verileri diziye çevirir
+// slice()    ==> dizi clone
 
 // 1.gösterim ==> var dizi=[]  ==> tavsiye edilen
 // 2.gösterim ==> var dizi2 = new Array();
@@ -842,6 +843,27 @@ function arrayJoin(){
 //join()
 //concat()
 
+
+
+//ÖDEV: Math.round(Math.random()*10+1))
+// bilgisayar tarafında rastgele  sayılar 1-10 arasında rastgele olsun oluştursun ve bitiş değeri 1<=X<=kullanıcı tarafından bitiş sayısına göre sayılar oluşturulsun 
+// bu sayıları bir diziye atama yapalım
+// bu sayılardan ilk eleman  ===> dizi[0]
+// bu sayılardan son eleman ===> dizi[dizi.length-1]
+// bu sayıların küçükten büyüğe sıralama ===> dizi.sort()
+// bu sayıların büyükten küçüğe sıralama ===> dizi.sort().reverse()
+// bu sayıların toplamları  ===> sum=0  sum+=i;
+// bu sayıların çift sayı toplamları  ===> if(dizi[i]%2==0)
+// bu sayıların tek sayı toplamları  ===> if(dizi[i]%2==1)
+// bu sayıların her birine 1 ekleyerek yeni bir dizi oluşturalım ==> iterative for ile her bir eleman erişmek ve 1 eklemek bunun dinamik kısmını ES kısmında göreceğiz.
+
+//++++++++++++++++++++++++++++++++++++++++++++++++
+
+// split()  ==> string elemanları diziye almak
+// slice()  ==> dizi clonelama
+// splice() ==> Diziye blok şeklinde veri ekleme veya çıkarma
+
+
 //split: bir string verisindeki bütün elemanları bir diziye atar
 function arraySplit(){
   var dizi4 = "java, spring, +hibernate, MVC, Data";
@@ -860,17 +882,55 @@ function arraySplit(){
 }
 //arraySplit()
 
-//ÖDEV: Math.round(Math.random()*10+1))
-// bilgisayar tarafında rastgele  sayılar 1-10 arasında rastgele olsun oluştursun ve bitiş değeri 1<=X<=kullanıcı tarafından bitiş sayısına göre sayılar oluşturulsun 
-// bu sayıları bir diziye atama yapalım
-// bu sayılardan ilk eleman  ===> dizi[0]
-// bu sayılardan son eleman ===> dizi[dizi.length-1]
-// bu sayıların küçükten büyüğe sıralama ===> dizi.sort()
-// bu sayıların büyükten küçüğe sıralama ===> dizi.sort().reverse()
-// bu sayıların toplamları  ===> sum=0  sum+=i;
-// bu sayıların çift sayı toplamları  ===> if(dizi[i]%2==0)
-// bu sayıların tek sayı toplamları  ===> if(dizi[i]%2==1)
-// bu sayıların her birine 1 ekleyerek yeni bir dizi oluşturalım ==> iterative for ile her bir eleman erişmek ve 1 eklemek bunun dinamik kısmını ES kısmında göreceğiz.
+
+//slice()  ==> dizi clone
+//slice: bize dizi döndürür.
+function arrayIndexClone(){
+var dizi=[1,2,3,4,5,6,7,8,9];
+//console.log(dizi);
+
+//3.indisten itibaren yani (4 eleman) diziyi kopyaladı
+console.log(dizi.slice(3));
+
+//istediğimiz dizi aralığını vererek dizi döndürmek
+console.log(dizi.slice(0,2)); //0<=X<=(2-1)
+}
+arrayIndexClone()
+
+console.log("**************************")
+
+//splice() ==> diziye veri ekleme silmek
+function arrayBlockDelete(){
+  var dizi=["deneme",2,3,4,5,6,7,8,9];
+
+  // //verilen indisten itibaren kopyaladı (indis dahildir)
+  // console.log(dizi.splice(3));
+
+  // //0:başlama indisi
+  // //2:bitiş indisi
+  // console.log(dizi.splice(0,2)); //0<=X<=(2-1)
+
+  //0: başlamada indisi
+  console.log(dizi);
+  dizi=dizi.splice(0,0,66);
+  
+for(var i=0; i<dizi.length; i++){
+  console.log(dizi[i]);
+}
+}
+//arrayBlockDelete();
 
 
-//splice()
+function arrayBlockAdd(){
+  var dizi = ["1", "2", "3", "4"];
+  //2.başlama indisi
+  //0: silme
+  //
+  console.log(dizi.splice(2, 0, "Lemon", "Kiwi"));
+  console.log(dizi)
+  }
+  arrayBlockAdd()
+
+
+
+
