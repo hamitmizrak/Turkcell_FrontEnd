@@ -41,6 +41,11 @@ document.write("myCars2 boyutu: " + myCars2.length + "<br/>");
 Burakcan ==>
 
 
+#####JS  apply call bind #############################################################
+BARIŞ ==> 
+
+#####JS  LIFO FIFO #############################################################
+MUSTAFA ==> 
 
 ###############################################################################################################
 Stack Memory - Heap Memory nedir? aralarındaki Fark  (Furkan)

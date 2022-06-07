@@ -1076,17 +1076,22 @@ let object={
 // console.log(object.fullStack())
 
 
-//create object
+//CREATE object
 object.database="postgresql";
+//alert(object.database)
 
-
+//DELETE
 //delete object attributes
 delete object.soyadi
 
 //Nested Object
 //alert(object.spring.database)
 //alert(object.spring["mvc"])
-alert(object["spring"]["core"])
+//alert(object["spring"]["core"])
+
+
+// object array
+//alert(object.frontend[1])
 
 //for in
 var result="";
@@ -1094,3 +1099,31 @@ for( let temp in  object){
   result+=object[temp]+" "
 }
 //alert(result)
+
+//++++++++++++++++++
+//object constructor
+//java ==> parametreli constructor
+function Student(adi,soyadi,plaka){
+this.adi=adi;
+this.soyadi=soyadi;
+this.plaka=plaka;
+console.log(this);
+}
+
+//var result=new Student("Hamit","Mızrak",44);
+
+////////////////////////////////////////
+//BARIŞ ==> apply call bind 
+
+/////////////////////////////////////
+function toplam(){
+  let number1=10,number2=20,sum=0;
+  sum=number1+number2;
+  console.info(sum)
+  console.log(sum)
+  console.warn(sum)
+  console.error(sum)
+ // console.clear();
+}
+
+
