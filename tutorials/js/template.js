@@ -1064,6 +1064,11 @@ let object={
   "frontend":["Html5","css3"],
   "fullStack":function(){
     return this.adi.toUpperCase();
+  },
+  "spring":{
+    "core":"ioc di",
+    "database":"h2db",
+    "mvc":"@controller"
   }
 }
 // console.log(object)
@@ -1074,9 +1079,14 @@ let object={
 //create object
 object.database="postgresql";
 
+
+//delete object attributes
+delete object.soyadi
+
+
 //for in
 var result="";
 for( let temp in  object){
   result+=object[temp]+" "
 }
-alert(result)
+//alert(result)
