@@ -1083,6 +1083,10 @@ object.database="postgresql";
 //delete object attributes
 delete object.soyadi
 
+//Nested Object
+//alert(object.spring.database)
+//alert(object.spring["mvc"])
+alert(object["spring"]["core"])
 
 //for in
 var result="";
