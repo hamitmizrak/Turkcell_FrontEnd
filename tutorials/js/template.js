@@ -1138,6 +1138,11 @@ function domFunction(){
  document.getElementsByClassName("dom_class")[0].style.color="yellow";
  document.getElementsByClassName("dom_class")[0].style.backgroundColor="black";
  document.getElementsByClassName("dom_class")[0].style.fontSize="15px";
+
+
+console.log(document.getElementById("a_id").getAttribute("href"))
+ let href=document.getElementById("a_id").setAttribute("href","http://www.deneme.com")
+console.log(href)
 }
 
 
