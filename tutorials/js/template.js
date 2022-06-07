@@ -794,233 +794,261 @@ multi-line comment
 //   document.write('<br>'  + temp)
 // }
 
-// diziyi String nasıl çevirelim
-//+++++++ dizi konuları
-function arrayValue() {
-  var dizi = ['java', 'spring', 'hibernate', 'spring']
-  document.write('<br>' + dizi[1] + dizi[2])
+// // diziyi String nasıl çevirelim
+// //+++++++ dizi konuları
+// function arrayValue() {
+//   var dizi = ['java', 'spring', 'hibernate', 'spring']
+//   document.write('<br>' + dizi[1] + dizi[2])
 
-  //dizinin ilk elemanına erişmek
-  document.write('<br>' + 'dizi ilk elemanı =>' + dizi[0])
+//   //dizinin ilk elemanına erişmek
+//   document.write('<br>' + 'dizi ilk elemanı =>' + dizi[0])
 
-  //dizinin son elemanına erişmek
-  document.write('<br>' + 'dizi son elemanı =>' + dizi[dizi.length - 1])
+//   //dizinin son elemanına erişmek
+//   document.write('<br>' + 'dizi son elemanı =>' + dizi[dizi.length - 1])
 
-  var diziEleman = dizi[0] //string
-  document.write('<br>' + typeof diziEleman)
-}
-//arrayValue()
+//   var diziEleman = dizi[0] //string
+//   document.write('<br>' + typeof diziEleman)
+// }
+// //arrayValue()
 
-//+++++++ dizi string'e çevir  ==> dizi.toString()
-// string ,concat()==> concat sadece kelimenin en sonuna ekler
-//arrayToString()
-function arrayToString() {
-  var dizi2 = ['java', 'spring', 'hibernate', 'MVC', 'Data']
+// //+++++++ dizi string'e çevir  ==> dizi.toString()
+// // string ,concat()==> concat sadece kelimenin en sonuna ekler
+// //arrayToString()
+// function arrayToString() {
+//   var dizi2 = ['java', 'spring', 'hibernate', 'MVC', 'Data']
 
-  document.write('<br>' + dizi2.toString())
-  console.log(dizi2.toString().toUpperCase().concat(' 1 kere ekle'))
-}
+//   document.write('<br>' + dizi2.toString())
+//   console.log(dizi2.toString().toUpperCase().concat(' 1 kere ekle'))
+// }
 
+// //join() => her bir elemana erişim sağlamak
+// //join() => string verilere çevirmek
+// function arrayJoin(){
+//   var dizi3 = ['java', 'spring', 'hibernate', 'MVC', 'Data'];
+//   document.write("<br/>"+dizi3.join()) //virgüllü
+//   document.write("<br/>"+dizi3.join(' ')) //boşlukla göstersin
+//   document.write("<br/>"+dizi3.join('-')) //- göstersin
 
-//join() => her bir elemana erişim sağlamak
-//join() => string verilere çevirmek
-function arrayJoin(){
-  var dizi3 = ['java', 'spring', 'hibernate', 'MVC', 'Data'];
-  document.write("<br/>"+dizi3.join()) //virgüllü 
-  document.write("<br/>"+dizi3.join(' ')) //boşlukla göstersin
-  document.write("<br/>"+dizi3.join('-')) //- göstersin
+//   var value=dizi3.join();
+//   document.write("<br>"+typeof value)
 
-  var value=dizi3.join();
-  document.write("<br>"+typeof value)
+//   var value2=dizi3.join().startsWith('j');
+//   document.write("<br>"+value2)
+// }
 
-  var value2=dizi3.join().startsWith('j');
-  document.write("<br>"+value2)
-}
+// //arrayJoin()
 
-//arrayJoin()
+// //toString()
+// //join()
+// //concat()
 
-//toString()
-//join()
-//concat()
+// //ÖDEV: Math.round(Math.random()*10+1))
+// // bilgisayar tarafında rastgele  sayılar 1-10 arasında rastgele olsun oluştursun ve bitiş değeri 1<=X<=kullanıcı tarafından bitiş sayısına göre sayılar oluşturulsun
+// // bu sayıları bir diziye atama yapalım
+// // bu sayılardan ilk eleman  ===> dizi[0]
+// // bu sayılardan son eleman ===> dizi[dizi.length-1]
+// // bu sayıların küçükten büyüğe sıralama ===> dizi.sort()
+// // bu sayıların büyükten küçüğe sıralama ===> dizi.sort().reverse()
+// // bu sayıların toplamları  ===> sum=0  sum+=i;
+// // bu sayıların çift sayı toplamları  ===> if(dizi[i]%2==0)
+// // bu sayıların tek sayı toplamları  ===> if(dizi[i]%2==1)
+// // bu sayıların her birine 1 ekleyerek yeni bir dizi oluşturalım ==> iterative for ile her bir eleman erişmek ve 1 eklemek bunun dinamik kısmını ES kısmında göreceğiz.
 
+// //++++++++++++++++++++++++++++++++++++++++++++++++
 
+// // split()  ==> string elemanları diziye almak
+// // slice()  ==> dizi clonelama
+// // splice() ==> Diziye blok şeklinde veri ekleme veya çıkarma
 
-//ÖDEV: Math.round(Math.random()*10+1))
-// bilgisayar tarafında rastgele  sayılar 1-10 arasında rastgele olsun oluştursun ve bitiş değeri 1<=X<=kullanıcı tarafından bitiş sayısına göre sayılar oluşturulsun 
-// bu sayıları bir diziye atama yapalım
-// bu sayılardan ilk eleman  ===> dizi[0]
-// bu sayılardan son eleman ===> dizi[dizi.length-1]
-// bu sayıların küçükten büyüğe sıralama ===> dizi.sort()
-// bu sayıların büyükten küçüğe sıralama ===> dizi.sort().reverse()
-// bu sayıların toplamları  ===> sum=0  sum+=i;
-// bu sayıların çift sayı toplamları  ===> if(dizi[i]%2==0)
-// bu sayıların tek sayı toplamları  ===> if(dizi[i]%2==1)
-// bu sayıların her birine 1 ekleyerek yeni bir dizi oluşturalım ==> iterative for ile her bir eleman erişmek ve 1 eklemek bunun dinamik kısmını ES kısmında göreceğiz.
+// //split: bir string verisindeki bütün elemanları bir diziye atar
+// function arraySplit(){
+//   var dizi4 = "java, spring, +hibernate, MVC, Data";
+//   console.log(dizi4)
 
-//++++++++++++++++++++++++++++++++++++++++++++++++
+//   var dizi5=[];
+//   console.log(dizi4.split(" ")) //regex
 
-// split()  ==> string elemanları diziye almak
-// slice()  ==> dizi clonelama
-// splice() ==> Diziye blok şeklinde veri ekleme veya çıkarma
+//   dizi5=dizi4.split("+"); //+ işaretine göre parçalama
+//   console.log(dizi5)
 
+//  for (let i = 0; i < dizi5.length; i++) {
+//    console.log(dizi5[i]);
+//  }
 
-//split: bir string verisindeki bütün elemanları bir diziye atar
-function arraySplit(){
-  var dizi4 = "java, spring, +hibernate, MVC, Data";
-  console.log(dizi4)
+// }
+// //arraySplit()
 
-  var dizi5=[];
-  console.log(dizi4.split(" ")) //regex
+// //slice()  ==> dizi clone
+// //slice: bize dizi döndürür.
+// function arrayIndexClone(){
+// var dizi=[1,2,3,4,5,6,7,8,9];
+// //console.log(dizi);
 
-  dizi5=dizi4.split("+"); //+ işaretine göre parçalama
-  console.log(dizi5)
+// //3.indisten itibaren yani (4 eleman) diziyi kopyaladı
+// console.log(dizi.slice(3));
 
- for (let i = 0; i < dizi5.length; i++) {
-   console.log(dizi5[i]);
- }
+// //istediğimiz dizi aralığını vererek dizi döndürmek
+// console.log(dizi.slice(0,2)); //0<=X<=(2-1)
+// }
+// //arrayIndexClone()
 
-}
-//arraySplit()
+// console.log("**************************")
 
+// //splice() ==> diziye veri ekleme silmek
+// function arrayBlockDelete(){
+//   var dizi=["deneme",2,3,4,5,6,7,8,9];
 
-//slice()  ==> dizi clone
-//slice: bize dizi döndürür.
-function arrayIndexClone(){
-var dizi=[1,2,3,4,5,6,7,8,9];
-//console.log(dizi);
+//   // //verilen indisten itibaren kopyaladı (indis dahildir)
+//   // console.log(dizi.splice(3));
 
-//3.indisten itibaren yani (4 eleman) diziyi kopyaladı
-console.log(dizi.slice(3));
+//   // //0:başlama indisi
+//   // //2:bitiş indisi
+//   // console.log(dizi.splice(0,2)); //0<=X<=(2-1)
 
-//istediğimiz dizi aralığını vererek dizi döndürmek
-console.log(dizi.slice(0,2)); //0<=X<=(2-1)
-}
-//arrayIndexClone()
+//   //0: başlamada indisi
+//   console.log(dizi);
+//   dizi=dizi.splice(0,0,66);
 
-console.log("**************************")
+// for(var i=0; i<dizi.length; i++){
+//   console.log(dizi[i]);
+// }
+// }
+// //arrayBlockDelete();
 
-//splice() ==> diziye veri ekleme silmek
-function arrayBlockDelete(){
-  var dizi=["deneme",2,3,4,5,6,7,8,9];
+// function arrayBlockAdd(){
+var dizi = ['1', '2', '3', '4']
+//2.başlama indisi
+//0: silme
+//   //
+//   console.log(dizi.splice(2, 0, "Lemon", "Kiwi"));
+//   console.log(dizi)
+//   }
+//   //arrayBlockAdd()
 
-  // //verilen indisten itibaren kopyaladı (indis dahildir)
-  // console.log(dizi.splice(3));
+//   //Hoisting: önce değerei daha sonra türünü
+//   deneme=44;
+//   var deneme;
+//  //document.write("<br>"+deneme)
 
-  // //0:başlama indisi
-  // //2:bitiş indisi
-  // console.log(dizi.splice(0,2)); //0<=X<=(2-1)
-
-  //0: başlamada indisi
-  console.log(dizi);
-  dizi=dizi.splice(0,0,66);
-  
-for(var i=0; i<dizi.length; i++){
-  console.log(dizi[i]);
-}
-}
-//arrayBlockDelete();
-
-
-function arrayBlockAdd(){
-  var dizi = ["1", "2", "3", "4"];
-  //2.başlama indisi
-  //0: silme
-  //
-  console.log(dizi.splice(2, 0, "Lemon", "Kiwi"));
-  console.log(dizi)
-  }
-  //arrayBlockAdd()
-
-  //Hoisting: önce değerei daha sonra türünü
-  deneme=44;
-  var deneme;
- //document.write("<br>"+deneme)
-
-  ////////////////////////////////////////////////////////////
-  //Object: özellikleri
-  //this: unutma
-  //anonymous function
+////////////////////////////////////////////////////////////
+//Object: özellikleri
+//this: unutma
+//anonymous function
 
 //   var obj2=new Object()
 //  console.log(obj2)
 
-var person={
-  "adı":"Hamit",
-  "soyadı":"Mızrak",
-  "deneyim":9,
-  "isLogin":true,
-  "teknolojiler":["html5","css3","js","bootstrap"],
-  "adiSoyadi":function(){
-    return this.adı.toUpperCase()
-  },
+// var person = {
+//   "adı":"Hamit",
+//   "soyadı":"Mızrak",
+//   "deneyim":9,
+//   "isLogin":true,
+//   "teknolojiler":["html5","css3","js","bootstrap"],
+//   "adiSoyadi":function(){
+//     return this.adı.toUpperCase()
+//   },
 
-  "java":{
-    "adı":"JavaSE",
-    "db":"H2DB"
-  }
-}; 
-//console.log(person)
+//   "java":{
+//     "adı":"JavaSE",
+//     "db":"H2DB"
+//   }
+// };
+// //console.log(person)
 
-//objeye sonradan veri eklemek için kullanıyoruz
-// person.eklenen="Eklenen veri";
-// console.log(person.eklenen)
+// //objeye sonradan veri eklemek için kullanıyoruz
+// // person.eklenen="Eklenen veri";
+// // console.log(person.eklenen)
 
+// //Literal Template
+// function esLiteralTemplateMultiLine(){
+// var valueTem1="Merhabalar <br> nasılsınız <br> yeni teknolojiler öğreniyorum";
+// document.writeln("<br>"+valueTem1)
+// console.log(valueTem1+"\ndiğer kelime")
 
-//Literal Template
-function esLiteralTemplateMultiLine(){
-var valueTem1="Merhabalar <br> nasılsınız <br> yeni teknolojiler öğreniyorum";
-document.writeln("<br>"+valueTem1)
-console.log(valueTem1+"\ndiğer kelime")
+// //1-MultiLine
+// var valueTem2=`Merhabalar
+// nasılsınız`;
+// console.log(valueTem2)
+// }
+// //esLiteralTemplateMultiLine()
 
-//1-MultiLine
-var valueTem2=`Merhabalar
-nasılsınız`;
-console.log(valueTem2)
-}
-//esLiteralTemplateMultiLine()
+// // 2-) Interpolation `${}`
+// function esLiteralInterpolation(){
+//   var adi44="Hamit";
+//   var soyadi44="Mızrak";
 
-// 2-) Interpolation `${}`
-function esLiteralInterpolation(){
-  var adi44="Hamit";
-  var soyadi44="Mızrak";
+//   var valueInter1=adi44+"\n"+soyadi44;
+//   console.log(valueInter1)
 
-  var valueInter1=adi44+"\n"+soyadi44;
-  console.log(valueInter1)
+//   var valueInter2=`adım:${adi44} soyadım:${soyadi44}`;
+//   console.log(valueInter2)
 
-  var valueInter2=`adım:${adi44} soyadım:${soyadi44}`;
-  console.log(valueInter2)
+//   }
+// //esLiteralInterpolation()
 
-  }
-//esLiteralInterpolation()
+// // 3-) Html Template
+// function normalHtmlTemplate(){
+//   var country="Turkey";
+//   var html=
+//   "<ul>"+
+//       "<li>"+
+//           country+
+//       "</li>"+
+//       "<li>"+
+//           country.toUpperCase()+
+//       "</li>"+
+//   "</ul>";
+//   document.body.innerHTML=html;
+// }
+// //normalHtmlTemplate()
 
-// 3-) Html Template
-function normalHtmlTemplate(){
-  var country="Turkey";
-  var html=
-  "<ul>"+
-      "<li>"+
-          country+
-      "</li>"+
-      "<li>"+
-          country.toUpperCase()+
-      "</li>"+
-  "</ul>";
-  document.body.innerHTML=html;
-}
-//normalHtmlTemplate()
+// function esTemplateHtmlTemplate(){
+//   var country="Turkey";
+// var html=
+// `
+// <ul>
+//     <li>${country}</li>
+//     <li>${country}</li>
+// </ul>
+// `;
+// document.body.innerHTML=html;
+// }
+// esTemplateHtmlTemplate()
 
-function esTemplateHtmlTemplate(){
-  var country="Turkey";
-var html=
-`
-<ul>
-    <li>${country}</li>
-    <li>${country}</li>
-</ul>
-`;
-document.body.innerHTML=html;
-}
-esTemplateHtmlTemplate()
+///////////////////////////////////////////////////////////////////////////////
+//ÖDEV-1
+//y=3x+4k ==> 1.dereceden 2 bilinmyenli denklem
+//Kullanıcı tarafından alınan x ve k değerlerini hesaplayan algoritma yazınız ?
 
+//ÖDEV-2
+//Kullanıcı tarafından alınan dereceyi  Fahrenhayta çeviren algoritma yapalım.
+//Formül:(x*9/5)+32
 
+//ÖDEV-3 verilen bir sayının negatif mi pozitif mi olduğunu bulan algoritma ?
 
+//ÖDEV-4 Kullanıcı tarafından aldığımız password ile repassword girilsin doğru ve yanlışı göstersin ?
+
+//ÖDEV-5
+//Zamanın dinamik olarak alıp hangi gün olduğunu gösteren arrow function algoritmasını yazalım switch-case   new Date().getDay() 0=pazar 1=pazartesi
+
+//ÖDEV-6
+//Login userEmail,userPassword kullanıcıdan aldığımız değeri db ile karşılaştıracak eğer doğru ise adminFunction'a gönderecek 4 kalan haktan aşağı doğru düşecek eğer kalan hak sayımız 0 olursa kullanıcı bloke olsun
+// dbUserEmail="deneme@gmail.com"
+// dbUserPassword="root"
+
+//ÖDEV-7
+//Zamanın dinamik olarak alıp hangi gün olduğunu gösteren Immedia function algoritmasını yazalım switch-case   new Date().getDay()
+// ()()
+
+//ÖDEV-8
+//Zamanın dinamik olarak alıp hangi gün olduğunu gösteren Arrow function algoritmasını yazalım switch-case   new Date().getDay()
+// let deneme= ()=>{ }
+
+//ÖDEV-9
+//Zamanın dinamik olarak alıp hangi gün olduğunu gösteren Anonymous function algoritmasını yazalım switch-case   new Date().getDay()
+// let deneme= function (){ }
+
+//ÖDEV-10
+//Sayı bulma oyunu: 1-10 arasında rastgele sayılar olsun bizde tahmin etmeye çalışalım bizim tahmin sayımız 5 olsun eğer biz sayıdan büyükse büyük tahmin eğer sayıdan küçükse küçük tahmin. ve sonunda eğer bulursak kaçıncı tahminde bulduğumuz bize söylesin ?
+
+///////////////////////////////////////////////////////////////////////////////

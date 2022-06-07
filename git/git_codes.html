@@ -72,11 +72,51 @@ git branch -D branchAdi  //(Branchi Silmek)
 
 ####################################################################################
 
+gitignore: eğer git tarafından takip edilmesini istemediğimiz dizinler varsa bununla çözümleriz.
+
+cat >> .gitignore
+secret
+
+####################################################################################
+
+CRLF linux işletim sistemine göre yeni satıra geçtim ancak sen windowstasın hatası
+git config core.autocrlf true
+
+
+####################################################################################
+
+git diff f2b92864 b4bd3eb0
+git difftool f2b92864 b4bd3eb0
+
+####################################################################################
+tag: etiket diyoruz biz projemizde version oluştururken kullandığımız bir splittir.
+biz major veya minor versionlarda kullanabiliriz.
+
+tag ile branch arasındaki farklardan bahsedilir ?
+branch: çalıştığımız koldur (Local) branch işimiz bittiğinde biter
+tag: Globaldir bu heryerde kullanırız. genellikle sürümlerde kullanırız
+
+git tag ==> tag listele
+git tag v1.0 ==> v1.0 adında bir tag oluştur
+
+git checkout v1.0 ==> tag'ler arasında geçiş
+git checkout main ==> tag'ler arasında geçiş
+
+git tag --delete v1.0 ==> ilgili tag'i silmek
+
+git push -u origin v1.0 ==> push
 
 
 
+git checkout commitID
+git checkout branchID
+git checkout tagID
+####################################################################################
 
-
+pull -fetch
+reset
+conflict
+SSH-KEY
 
 -->
 
