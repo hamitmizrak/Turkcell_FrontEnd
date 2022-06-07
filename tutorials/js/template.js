@@ -1127,3 +1127,17 @@ function toplam(){
 }
 
 
+function domFunction(){
+ // alert("deneme")
+ //document.getElementById("dom_id").innerHTML="<b><i>Değiştirildi</i></b>";
+ //document.getElementsByName("dom_name")[0].innerHTML="<b><i>Değiştirildi</i></b>";
+ //document.getElementsByTagName("h5")[0].innerHTML="<b><i>Değiştirildi</i></b>";
+ //document.getElementsByClassName("dom_class")[0].innerHTML="<b><i>Değiştirildi</i></b>";
+ document.getElementsByClassName("dom_class")[0].innerText="Değiştirildi";
+
+ document.getElementsByClassName("dom_class")[0].style.color="yellow";
+ document.getElementsByClassName("dom_class")[0].style.backgroundColor="black";
+ document.getElementsByClassName("dom_class")[0].style.fontSize="15px";
+}
+
+
