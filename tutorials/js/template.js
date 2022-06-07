@@ -1051,4 +1051,24 @@ var dizi = ['1', '2', '3', '4']
 //ÖDEV-10
 //Sayı bulma oyunu: 1-10 arasında rastgele sayılar olsun bizde tahmin etmeye çalışalım bizim tahmin sayımız 5 olsun eğer biz sayıdan büyükse büyük tahmin eğer sayıdan küçükse küçük tahmin. ve sonunda eğer bulursak kaçıncı tahminde bulduğumuz bize söylesin ?
 
+///////////////////////////////////////////////////////////////////////
+//LIFO FIFO data structure (Mustafa)
 ///////////////////////////////////////////////////////////////////////////////
+//üğşçöı yazmayalım.
+
+let object={
+  "adi":"Hamit",
+  "soyadi":"Mızrak",
+  "isTurkish":true,
+  "diller":2,
+  "frontend":["Html5","css3"],
+  "fullStack":function(){
+    return this.adi.toUpperCase();
+  }
+}
+console.log(object)
+console.log(object.adi+" "+object.soyadi)
+console.log(object.fullStack())
+
+
+
