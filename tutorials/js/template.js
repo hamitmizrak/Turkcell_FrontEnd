@@ -1066,9 +1066,17 @@ let object={
     return this.adi.toUpperCase();
   }
 }
-console.log(object)
-console.log(object.adi+" "+object.soyadi)
-console.log(object.fullStack())
+// console.log(object)
+// console.log(object.adi+" "+object.soyadi)
+// console.log(object.fullStack())
 
 
+//create object
+object.database="postgresql";
 
+//for in
+var result="";
+for( let temp in  object){
+  result+=object[temp]+" "
+}
+alert(result)
