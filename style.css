@@ -38,6 +38,12 @@ p{
 }
 
 /* ################################################### */
+.line_clamp3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
 .line_clamp4 {
     display: -webkit-box;
     -webkit-line-clamp: 4;
@@ -116,10 +122,48 @@ p {
     color: black;
 }
 
+/* ability */
+
+#tec {
+    margin-top:35rem;
+}
+
+#tec .card{
+  
+    box-shadow: 1px 1px 4px 1px rgba(0,0,0,.8);
+}
+
+
+#main_icon i {
+    font-size: 7rem;
+    color: red;
+}
+
+#main_icon p , #main_icon2 p {
+    color: black;
+    text-align: justify;
+}
+
+#main_icon2 i {
+    font-size: 7rem;
+    color: rgb(115, 107, 230);
+}
+
+
+/* Hakkımızda */
+#about-1{
+     background-color: #eaf0fc; 
+     margin-top:10%;
+     margin-bottom:20%;
+     height: 45rem;
+     padding-top:5rem;
+ }
+
+
+/* Hakkımızda */
 #about-2{
-   margin-top:10%;
-   background-color: #eaf0fc;
-   height: 32rem;
+   margin-top:1%;
+   height: 45rem;
    padding-top:5rem;
 }
 
