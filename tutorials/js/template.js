@@ -1148,15 +1148,45 @@ console.log(href)
 
 //////////////////////////////////////////////////////////////
 
+// JS > HTML > CSS  alert("deneme")
+
+
 function dom_javascript(){
-  document.getElementById("jquery_id").innerHTML="<b><mark>JavaScript</mark></b>"
+  document.getElementById("jquery_id").innerHTML="<b><mark>JavaScript</mark></b>";
+  document.getElementById("jquery_id").innerText="JavaScript sadece text";
+  document.getElementById("jquery_id").style.color="red";
+  document.getElementById("jquery_id").style.fontSize="55px";
 }
+
+
+// $(document).ready(function(){});
+// $(function(){});
 
 
 function dom_jquery(){
-  // $(selector).attributes()
-$('#jquery_id').html("<b><mark><i>jQuery</i></mark></b>")
+$('#jquery_id').html("<b><mark><i>jQuery</i></mark></b>");
+$('#jquery_id').text("jQuery sadece text");
+
+$('#jquery_id').css("color","blue").css("fontSize","45px");
+let allCssObject={
+  color:"blue",
+  fontSize:"45px",
+  boxShadow:"1px 1px 3px 1px rgba(255,255,255,.8)"
+};
+$('#jquery_id').css(allCssObject);
 }
+
+
+  $("#target").click(function() {
+    alert( "Handler for .click() called." );
+  });
+
+  $( "p" ).click(function() {
+    $( this ).slideUp();
+  });
+
+
+
 
 
 

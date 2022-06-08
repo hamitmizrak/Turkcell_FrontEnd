@@ -24,22 +24,45 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
 
     <!-- jquery  -->
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
     <!-- react libraries -->
     <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+
+
+    <style>
+        p {
+          color: red;
+          margin: 5px;
+          cursor: pointer;
+        }
+        p:hover {
+          background: yellow;
+        }
+        </style>
+
+
 </head>
 
 <body class="container bg-dark text-white">
     <!-- start codes -->
-
+    <p>First Paragraph</p>
+    <p>Second Paragraph</p>
+    <p>Yet one more Paragraph</p>
 
     <h4 id="jquery_id" class="mb-5 border">jquery </h4>
 
     <button class="btn btn-primary" onclick="dom_javascript()">DOM</button>
     <button class="btn btn-warning" onclick="dom_jquery()">jQuery</button>
+
+    <div id="target">
+        Click here
+      </div>
+      <div id="other">
+        Trigger the handler
+      </div>
    
 
  <!-- <h1 class="display-1 text-primary">HTML SAYFASI</h1>
@@ -75,12 +98,16 @@
 <button class="btn btn-success">onchange</button>
 <button class="btn btn-success">onload</button>
 <button class="btn btn-success">addEventListener</button> -->
+  
 
     <!-- ends codes -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
 
-      <!-- External JS -->
-      <script src="template.js"></script>
+    <!-- External JS -->
+    <script src="template.js"></script>
+
+
+  
 </body>
 </html>
