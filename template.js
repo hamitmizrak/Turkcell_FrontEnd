@@ -1,1 +1,33 @@
-One Pages Link: https://www.free-css.com/template-categories/one-page
+
+
+$( function() {
+
+    // auto-complete
+    var availableTags = [
+      "ActionScript",
+      "AppleScript",
+      "Asp",
+      "BASIC",
+      "C",
+      "C++",
+      "Clojure",
+      "COBOL",
+      "ColdFusion",
+      "Erlang",
+      "Fortran",
+      "Groovy",
+      "Haskell",
+      "Java",
+      "JavaScript",
+      "Lisp",
+      "Perl",
+      "PHP",
+      "Python",
+      "Ruby",
+      "Scala",
+      "Scheme"
+    ];
+    $("#tags").autocomplete({
+      source: availableTags
+    });
+  } );
