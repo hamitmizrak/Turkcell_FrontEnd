@@ -1146,3 +1146,19 @@ console.log(href)
 }
 
 
+//////////////////////////////////////////////////////////////
+
+function dom_javascript(){
+  document.getElementById("jquery_id").innerHTML="<b><mark>JavaScript</mark></b>"
+}
+
+
+function dom_jquery(){
+  // $(selector).attributes()
+$('#jquery_id').html("<b><mark><i>jQuery</i></mark></b>")
+}
+
+
+
+
+

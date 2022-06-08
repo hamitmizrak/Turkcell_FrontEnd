@@ -46,6 +46,12 @@ BARIŞ ==>
 
 #####JS  LIFO FIFO #############################################################
 MUSTAFA ==> 
+stack(yığın)'da: LIFO(Last in First out) (En son giren en önce çıkar) mantığına dayanan, 
+elemanlar topluluğundan oluşan bir yapıdır. örnek olarak Taşınırken topladığımız koli kutusu düşünelim. 
+İçerisinde kitaplar var, Mantıken kolinin altı kapalı ve üst üste koymamız gerekiyor. Koliyi tekrar açtığımızda
+kitapları çıkartırken en üstteki kitaptan çıkarmaya başlıyoruz. 
+Yığın da aynı mantıkta çalışıyor.
+Yığınlara eleman eklerken veya çıkartırken bazı methodlar uygulanıyor. 
 
 ###############################################################################################################
 Stack Memory - Heap Memory nedir? aralarındaki Fark  (Furkan)
